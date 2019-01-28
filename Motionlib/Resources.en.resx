@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALM制动方式" xml:space="preserve">
+    <value>ALMStopMode</value>
+  </data>
+  <data name="ALM有效电平" xml:space="preserve">
+    <value>ALMValidSignal</value>
+  </data>
+  <data name="EL设置" xml:space="preserve">
+    <value>SetEL</value>
+  </data>
+  <data name="EMG信号使能" xml:space="preserve">
+    <value>EMGSignalEnable</value>
+  </data>
+  <data name="EMG有效电平" xml:space="preserve">
+    <value>EMGValidSignal</value>
+  </data>
+  <data name="ERC信号" xml:space="preserve">
+    <value>ERCSignal</value>
+  </data>
+  <data name="ERC信号使能" xml:space="preserve">
+    <value>ERCSignalEnable</value>
+  </data>
+  <data name="ERC关断时间" xml:space="preserve">
+    <value>ERCShutTime</value>
+  </data>
+  <data name="ERC有效宽度" xml:space="preserve">
+    <value>ERCValidWidth</value>
+  </data>
+  <data name="ERC有效电平" xml:space="preserve">
+    <value>ERCValidSignal</value>
+  </data>
+  <data name="INP信号使能" xml:space="preserve">
+    <value>INPSignalEnable</value>
+  </data>
+  <data name="INP有效电平" xml:space="preserve">
+    <value>INPValidSignal</value>
+  </data>
+  <data name="PCS允许或禁止" xml:space="preserve">
+    <value>PCSAllowOrForbid</value>
+  </data>
+  <data name="PCS有效电平" xml:space="preserve">
+    <value>PCSValidSignal</value>
+  </data>
+  <data name="SD允许或禁止" xml:space="preserve">
+    <value>SDAllowOrForbid</value>
+  </data>
+  <data name="SD工作模式" xml:space="preserve">
+    <value>SDWorkMode</value>
+  </data>
+  <data name="SD有效电平" xml:space="preserve">
+    <value>SDValidSignal</value>
+  </data>
+  <data name="SEVON电平" xml:space="preserve">
+    <value>SEVONSignal</value>
+  </data>
+  <data name="Stop模式" xml:space="preserve">
+    <value>StopMode</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="S型" xml:space="preserve">
+    <value>SMode</value>
+  </data>
+  <data name="T型" xml:space="preserve">
+    <value>TMode</value>
+  </data>
+  <data name="XX上下电信息错误_错误信息为" xml:space="preserve">
+    <value>Up and down information wrong! The error message is:</value>
+  </data>
+  <data name="XX与已经有的IO点有冲突" xml:space="preserve">
+    <value>Conflict with IO points that already exist</value>
+  </data>
+  <data name="XX保存IO设置错误_请核对路径" xml:space="preserve">
+    <value>Save IO setting error; check path - "</value>
+  </data>
+  <data name="XX关闭连续直线运动信息错误_错误信息为" xml:space="preserve">
+    <value>Close continuous linear motion error! The error message is:</value>
+  </data>
+  <data name="XX写" xml:space="preserve">
+    <value>write</value>
+  </data>
+  <data name="XX写入输出点电平信息错误_错误信息为" xml:space="preserve">
+    <value>Write the output point level information wrong! The error message is:</value>
+  </data>
+  <data name="XX写文件配置错误" xml:space="preserve">
+    <value>Write file configuration error</value>
+  </data>
+  <data name="XX卡类型文件不存在" xml:space="preserve">
+    <value>The card type file does not exist</value>
+  </data>
+  <data name="XX号卡第" xml:space="preserve">
+    <value>Card number</value>
+  </data>
+  <data name="XX启动手轮运动函数错误_错误信息为" xml:space="preserve">
+    <value>Start handwheel motion function error! The error message is:</value>
+  </data>
+  <data name="XX启动连续直线插补错误_错误信息为" xml:space="preserve">
+    <value>Start continuous linear interpolation error! The error message is:</value>
+  </data>
+  <data name="XX启动连续直线运动信息错误_错误信息为" xml:space="preserve">
+    <value>Start continuous linear motion error! The error message is:</value>
+  </data>
+  <data name="XX复位超时_检查复位速度是否过低" xml:space="preserve">
+    <value>Reset timeout, check whether the reset speed is too low!</value>
+  </data>
+  <data name="XX实例化轴类失败_请退出程序_重新进入" xml:space="preserve">
+    <value>Instance axis failed; please exit the program and re-enter</value>
+  </data>
+  <data name="XX已经配置完成" xml:space="preserve">
+    <value>Has been configured</value>
+  </data>
+  <data name="XX打开连续直线插补_错误信息为" xml:space="preserve">
+    <value>Open continuous linear interpolation! The error message is:</value>
+  </data>
+  <data name="XX执行CSTP停止轴函数错误_错误信息为" xml:space="preserve">
+    <value>Execute CSTP stop axis function error! The error message is:</value>
+  </data>
+  <data name="XX执行ST段时间分配函数错误_错误信息为" xml:space="preserve">
+    <value>Execute ST segment time allocation function error! The error message is:</value>
+  </data>
+  <data name="XX执行ST运动函数错误_错误信息为" xml:space="preserve">
+    <value>Execute ST motion function error! The error message is:</value>
+  </data>
+  <data name="XX执行S型运动曲线函数错误_错误信息为" xml:space="preserve">
+    <value>Perform S-type motion curve function error! The error message is:</value>
+  </data>
+  <data name="XX执行S段时间分配函数错误_错误信息为" xml:space="preserve">
+    <value>Execute S segment time allocation function error! The error message is:</value>
+  </data>
+  <data name="XX执行S运动函数错误_错误信息为" xml:space="preserve">
+    <value>Execute S motion function error! The error message is:</value>
+  </data>
+  <data name="XX执行S连续运动函数错误_错误信息为" xml:space="preserve">
+    <value>Execute S continuous motion function error! The error message is:</value>
+  </data>
+  <data name="XX执行T型运动曲线函数错误_错误信息为" xml:space="preserve">
+    <value>Perform a T-shaped curve function error! The error message is:</value>
+  </data>
+  <data name="XX执行T连续运动函数错误_错误信息为" xml:space="preserve">
+    <value>Execute T continuous motion function error! The error message is:</value>
+  </data>
+  <data name="XX执行减速停止轴函数错误_错误信息为" xml:space="preserve">
+    <value>Perform a deceleration stop axis function error! The error message is:</value>
+  </data>
+  <data name="XX执行单独直线插补错误_错误信息为" xml:space="preserve">
+    <value>Perform a separate straight line interpolation error! The error message is:</value>
+  </data>
+  <data name="XX执行复位函数错误_错误信息为" xml:space="preserve">
+    <value>Execute reset function error! The error message is:</value>
+  </data>
+  <data name="XX执行改变速度函数错误_错误信息为" xml:space="preserve">
+    <value>Execute change speed function error! The error message is:</value>
+  </data>
+  <data name="XX执行紧急停止所有轴函数错误_错误信息为" xml:space="preserve">
+    <value>Perform an emergency stop all axis function error! The error message is:</value>
+  </data>
+  <data name="XX执行紧急停止轴函数错误_错误信息为" xml:space="preserve">
+    <value>Execute emergency stop axis function error! The error message is:</value>
+  </data>
+  <data name="XX找不到" xml:space="preserve">
+    <value>Can not find it</value>
+  </data>
+  <data name="XX改变目标位置函数错误_错误信息为" xml:space="preserve">
+    <value>Change target position function error! The error message is:</value>
+  </data>
+  <data name="XX改变目标位置失败" xml:space="preserve">
+    <value>Change destination failed!</value>
+  </data>
+  <data name="XX是否有对应的IO点" xml:space="preserve">
+    <value>Whether there is a corresponding IO point</value>
+  </data>
+  <data name="XX更新保存轴关系表错误_请重新配置" xml:space="preserve">
+    <value>Update save axis relationship table error; please reconfigure</value>
+  </data>
+  <data name="XX更新轴号表格错误" xml:space="preserve">
+    <value>Update 'Axis' form error</value>
+  </data>
+  <data name="XX更新轴名称表格错误" xml:space="preserve">
+    <value>Update 'Axis name' table error</value>
+  </data>
+  <data name="XX更新轴对应关系表格错误" xml:space="preserve">
+    <value>Update 'Axis correspondence' table error</value>
+  </data>
+  <data name="XX未发现该轴参数文件" xml:space="preserve">
+    <value>The axis parameter file was not found</value>
+  </data>
+  <data name="XX板卡初始化失败" xml:space="preserve">
+    <value>Board initialization failed</value>
+  </data>
+  <data name="XX板卡初始化失败_轴电平参数不存在" xml:space="preserve">
+    <value>Board initialization failed, axis level parameter does not exist!</value>
+  </data>
+  <data name="XX没有要保存的数据" xml:space="preserve">
+    <value>There is no data to be saved</value>
+  </data>
+  <data name="XX没有要保存的数据_请检查数据" xml:space="preserve">
+    <value>There is no data to be saved, please check the data</value>
+  </data>
+  <data name="XX没有要删除的数据" xml:space="preserve">
+    <value>There is no data to be deleted</value>
+  </data>
+  <data name="XX没有要删除的轴" xml:space="preserve">
+    <value>There is no axis to remove</value>
+  </data>
+  <data name="XX没有要删除的配置" xml:space="preserve">
+    <value>There is no configuration to remove</value>
+  </data>
+  <data name="XX没有要读取的文件" xml:space="preserve">
+    <value>There is no file to read!</value>
+  </data>
+  <data name="XX没有要配置的点" xml:space="preserve">
+    <value>There is no point to be configured</value>
+  </data>
+  <data name="XX没有要配置的轴" xml:space="preserve">
+    <value>There is no axis to configure</value>
+  </data>
+  <data name="XX没有要配置的轴号" xml:space="preserve">
+    <value>There is no axis number to be configured</value>
+  </data>
+  <data name="XX没有配置IO点" xml:space="preserve">
+    <value>No IO points are configured</value>
+  </data>
+  <data name="XX添加高速比较位置点错误_错误信息为" xml:space="preserve">
+    <value>Add high speed compare position error! The error message is:</value>
+  </data>
+  <data name="XX添加高速比较点失败" xml:space="preserve">
+    <value>Add high speed comparison point failed!</value>
+  </data>
+  <data name="XX添加高速比较点错误_错误信息为" xml:space="preserve">
+    <value>Add high speed comparison point error! The error message is:</value>
+  </data>
+  <data name="XX清除比较点失败" xml:space="preserve">
+    <value>Clear comparison point failed!</value>
+  </data>
+  <data name="XX清除高速比较点错误_错误信息为" xml:space="preserve">
+    <value>Clear high speed comparison point error! The error message is:</value>
+  </data>
+  <data name="XX清除高速比较通道比较点错误_错误信息为" xml:space="preserve">
+    <value>Clear High Speed Compare Channel Compare Point Error! The error message is:</value>
+  </data>
+  <data name="XX获取比较器状态失败" xml:space="preserve">
+    <value>Get comparator status failed!</value>
+  </data>
+  <data name="XX获取高速比较位置当前状态错误_错误信息为" xml:space="preserve">
+    <value>Get High Speed Compare Position Current Status Error! The error message is:</value>
+  </data>
+  <data name="XX获取高速比较通道比较模式错误_错误信息为" xml:space="preserve">
+    <value>Get High Speed Compare Channel Compare Mode Error! The error message is:</value>
+  </data>
+  <data name="XX获取高速比较通道脉冲宽度错误_错误信息为" xml:space="preserve">
+    <value>Get high speed compare channel pulse width error! The error message is:</value>
+  </data>
+  <data name="XX设置CMP比较值失败" xml:space="preserve">
+    <value>Setting CMP comparison failed!</value>
+  </data>
+  <data name="XX设置EZ信号函数错误_错误信息为" xml:space="preserve">
+    <value>Set EZ signal function error! The error message is:</value>
+  </data>
+  <data name="XX设置S运动速度函数错误_错误信息为" xml:space="preserve">
+    <value>Set S motion speed function error! The error message is:</value>
+  </data>
+  <data name="XX设置T运动速度函数错误_错误信息为" xml:space="preserve">
+    <value>Set T motion speed function error! The error message is:</value>
+  </data>
+  <data name="XX设置到位信息信息错误_错误信息为" xml:space="preserve">
+    <value>Set the information in place error! The error message is:</value>
+  </data>
+  <data name="XX设置单独直线插补速度错误_错误信息为" xml:space="preserve">
+    <value>Set a separate linear interpolation speed error! The error message is:</value>
+  </data>
+  <data name="XX设置复位EZ信号信息错误_错误信息为" xml:space="preserve">
+    <value>Set reset EZ signal error! The error message is:</value>
+  </data>
+  <data name="XX设置复位逻辑电平信息错误_错误信息为" xml:space="preserve">
+    <value>Set reset logic level information error! The error message is:</value>
+  </data>
+  <data name="XX设置手轮脉冲计数方式函数错误_错误信息为" xml:space="preserve">
+    <value>Set handwheel pulse count mode function error! The error message is:</value>
+  </data>
+  <data name="XX设置报警信号电平信息错误_错误信息为" xml:space="preserve">
+    <value>Set alarm signal level information error! The error message is:</value>
+  </data>
+  <data name="XX设置比较器触发条件失败" xml:space="preserve">
+    <value>Set the comparator trigger condition failed!</value>
+  </data>
+  <data name="XX设置比较输出电平失败" xml:space="preserve">
+    <value>Set compare output level failed!</value>
+  </data>
+  <data name="XX设置直线插补脉冲当量信息错误_错误信息为" xml:space="preserve">
+    <value>Set the line interpolation pulse equivalent information wrong! The error message is:</value>
+  </data>
+  <data name="XX设置编码器位置函数错误_错误信息为" xml:space="preserve">
+    <value>Set the encoder position function error! The error message is:</value>
+  </data>
+  <data name="XX设置编码器函数函数错误_错误信息为" xml:space="preserve">
+    <value>Set the encoder function function error! The error message is:</value>
+  </data>
+  <data name="XX设置编码器计数模式信息错误_错误信息为" xml:space="preserve">
+    <value>Set encoder count mode error! The error message is:</value>
+  </data>
+  <data name="XX设置脉冲发生模式信息错误_错误信息为" xml:space="preserve">
+    <value>Set pulse generation mode error! The error message is:</value>
+  </data>
+  <data name="XX设置螺旋插补直线信息错误_错误信息为" xml:space="preserve">
+    <value>Set helical interpolation line information error! The error message is:</value>
+  </data>
+  <data name="XX设置轴脉冲信息错误_错误信息为" xml:space="preserve">
+    <value>16/5000
+Shèzhì zhóu màichōng xìnxī cuòwù! Cuòwù xìnxī wèi:
+Set the axis pulse information wrong! The error message is:</value>
+  </data>
+  <data name="XX设置连续直线S段匀速时间信息错误_错误信息为" xml:space="preserve">
+    <value>Set continuous straight line S segment uniform time information error! The error message is:</value>
+  </data>
+  <data name="XX设置连续直线插补速度错误_错误信息为" xml:space="preserve">
+    <value>Set continuous linear interpolation speed error! The error message is:</value>
+  </data>
+  <data name="XX设置高速比较位置比较模式错误_错误信息为" xml:space="preserve">
+    <value>Set high speed comparison position comparison mode error! The error message is:</value>
+  </data>
+  <data name="XX设置高速比较位置脉冲宽度错误_错误信息为" xml:space="preserve">
+    <value>Set the speed comparison position pulse width error! The error message is:</value>
+  </data>
+  <data name="XX请重新上电复位" xml:space="preserve">
+    <value>Please re-power on reset!</value>
+  </data>
+  <data name="XX读取" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="XX轴" xml:space="preserve">
+    <value>axis!</value>
+  </data>
+  <data name="XX轴配置" xml:space="preserve">
+    <value>Axis configuration!</value>
+  </data>
+  <data name="XX输入点IO未配置" xml:space="preserve">
+    <value>Input point IO not configured!</value>
+  </data>
+  <data name="XX输入点IO状态格式错误" xml:space="preserve">
+    <value>Input IO status is wrong!</value>
+  </data>
+  <data name="XX输入点状态异常" xml:space="preserve">
+    <value>Input point status exception!</value>
+  </data>
+  <data name="XX输出点" xml:space="preserve">
+    <value>Output point:</value>
+  </data>
+  <data name="XX输出点IO未配置" xml:space="preserve">
+    <value>Output point IO not configured!</value>
+  </data>
+  <data name="XX输出点IO状态格式错误" xml:space="preserve">
+    <value>Output IO status is wrong!</value>
+  </data>
+  <data name="XX输出点状态异常" xml:space="preserve">
+    <value>Output point status exception!</value>
+  </data>
+  <data name="XX速度发送失败" xml:space="preserve">
+    <value>Speed sending failed!</value>
+  </data>
+  <data name="XX高速比较位设置失败" xml:space="preserve">
+    <value>High speed compare bit setting failed!</value>
+  </data>
+  <data name="上电" xml:space="preserve">
+    <value>POW</value>
+  </data>
+  <data name="传动比" xml:space="preserve">
+    <value>RunScale</value>
+  </data>
+  <data name="伺服RAY电平" xml:space="preserve">
+    <value>SEVONRAYSignal</value>
+  </data>
+  <data name="位置" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="位置编辑" xml:space="preserve">
+    <value>EditedPosition</value>
+  </data>
+  <data name="低电平" xml:space="preserve">
+    <value>LowSignal</value>
+  </data>
+  <data name="低速" xml:space="preserve">
+    <value>LowSpeed</value>
+  </data>
+  <data name="使用IO点" xml:space="preserve">
+    <value>UseIOPoint</value>
+  </data>
+  <data name="保存" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="保存参数" xml:space="preserve">
+    <value>SaveParams</value>
+  </data>
+  <data name="保存配置" xml:space="preserve">
+    <value>SaveConfig</value>
+  </data>
+  <data name="停止" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="停止1" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="允许" xml:space="preserve">
+    <value>Allow</value>
+  </data>
+  <data name="减速时间" xml:space="preserve">
+    <value>SpeedDownTime：</value>
+  </data>
+  <data name="减速比" xml:space="preserve">
+    <value>SpeedDownRatio：</value>
+  </data>
+  <data name="减速脉冲" xml:space="preserve">
+    <value>SpeedDownPulse：</value>
+  </data>
+  <data name="删除" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="删除位置" xml:space="preserve">
+    <value>DeletePosition</value>
+  </data>
+  <data name="删除轴名称" xml:space="preserve">
+    <value>DeleteAxisName</value>
+  </data>
+  <data name="删除选中速度" xml:space="preserve">
+    <value>DeleteSelectSpeed</value>
+  </data>
+  <data name="删除配置结果" xml:space="preserve">
+    <value>DeleteAxisConfig</value>
+  </data>
+  <data name="到位" xml:space="preserve">
+    <value>Arrived</value>
+  </data>
+  <data name="加速时间" xml:space="preserve">
+    <value>SpeedUpTime：</value>
+  </data>
+  <data name="加速脉冲" xml:space="preserve">
+    <value>SpeedUpPulse：</value>
+  </data>
+  <data name="卡号" xml:space="preserve">
+    <value>CardNo</value>
+  </data>
+  <data name="卡号选择" xml:space="preserve">
+    <value>ChooseCardNo</value>
+  </data>
+  <data name="卡数量" xml:space="preserve">
+    <value>CardNo</value>
+  </data>
+  <data name="卡类型" xml:space="preserve">
+    <value>CardType</value>
+  </data>
+  <data name="原点有效电平" xml:space="preserve">
+    <value>HomeValidSignal</value>
+  </data>
+  <data name="原点滤波使能" xml:space="preserve">
+    <value>HomeFilterEnable</value>
+  </data>
+  <data name="原点设置" xml:space="preserve">
+    <value>SetHome</value>
+  </data>
+  <data name="参数导入" xml:space="preserve">
+    <value>ImportParams</value>
+  </data>
+  <data name="参数设置" xml:space="preserve">
+    <value>SetParams</value>
+  </data>
+  <data name="反向" xml:space="preserve">
+    <value>RebellionDirection</value>
+  </data>
+  <data name="取消" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="可用输入" xml:space="preserve">
+    <value>UsableInput</value>
+  </data>
+  <data name="可用输出" xml:space="preserve">
+    <value>UsableOutPut</value>
+  </data>
+  <data name="名称" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="启动速度" xml:space="preserve">
+    <value>StartSpeed：</value>
+  </data>
+  <data name="回原点EZ个数" xml:space="preserve">
+    <value>BackHomeEZCount</value>
+  </data>
+  <data name="回原点方向" xml:space="preserve">
+    <value>BackHomeDirection</value>
+  </data>
+  <data name="回原点模式" xml:space="preserve">
+    <value>BackHomeMode</value>
+  </data>
+  <data name="回原点速度模式" xml:space="preserve">
+    <value>BackHomeSpeedMode</value>
+  </data>
+  <data name="型号" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="复位" xml:space="preserve">
+    <value>BackHome</value>
+  </data>
+  <data name="复位速度" xml:space="preserve">
+    <value>ReplaceSpeed：</value>
+  </data>
+  <data name="对应关系" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="张" xml:space="preserve">
+    <value>Tense</value>
+  </data>
+  <data name="当前状态" xml:space="preserve">
+    <value>CurrentStatus</value>
+  </data>
+  <data name="报警" xml:space="preserve">
+    <value>Warn</value>
+  </data>
+  <data name="指令发送失败" xml:space="preserve">
+    <value>指令发送失败</value>
+  </data>
+  <data name="指令发送成功" xml:space="preserve">
+    <value>指令发送成功</value>
+  </data>
+  <data name="改变选中速度" xml:space="preserve">
+    <value>ChangeSelectSpeed</value>
+  </data>
+  <data name="无效" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="最大速度" xml:space="preserve">
+    <value>MaxSpeed：</value>
+  </data>
+  <data name="有效" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="正向" xml:space="preserve">
+    <value>StraightDirection</value>
+  </data>
+  <data name="正方向" xml:space="preserve">
+    <value>Front</value>
+  </data>
+  <data name="正极限" xml:space="preserve">
+    <value>RightLimited</value>
+  </data>
+  <data name="正极限报警" xml:space="preserve">
+    <value>RightLimitedWarn</value>
+  </data>
+  <data name="测试" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="添加" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="添加1" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="添加位置" xml:space="preserve">
+    <value>ADDPosition</value>
+  </data>
+  <data name="添加位置1" xml:space="preserve">
+    <value>ADDPosition</value>
+  </data>
+  <data name="添加卡" xml:space="preserve">
+    <value>AddCard</value>
+  </data>
+  <data name="添加卡1" xml:space="preserve">
+    <value>AddCard</value>
+  </data>
+  <data name="添加输入" xml:space="preserve">
+    <value>AddInput</value>
+  </data>
+  <data name="添加输入1" xml:space="preserve">
+    <value>AddInput</value>
+  </data>
+  <data name="添加输出" xml:space="preserve">
+    <value>AddOutPut</value>
+  </data>
+  <data name="添加输出1" xml:space="preserve">
+    <value>AddOutPut</value>
+  </data>
+  <data name="添加速度" xml:space="preserve">
+    <value>AddSpeed</value>
+  </data>
+  <data name="添加速度1" xml:space="preserve">
+    <value>AddSpeed</value>
+  </data>
+  <data name="添加项目" xml:space="preserve">
+    <value>AddProject</value>
+  </data>
+  <data name="添加项目1" xml:space="preserve">
+    <value>AddProject</value>
+  </data>
+  <data name="添加项目名称" xml:space="preserve">
+    <value>AddProjectName</value>
+  </data>
+  <data name="添加项目名称1" xml:space="preserve">
+    <value>AddProjectName</value>
+  </data>
+  <data name="添加项目状态A" xml:space="preserve">
+    <value>AddProjectStatusA</value>
+  </data>
+  <data name="添加项目状态A1" xml:space="preserve">
+    <value>AddProjectStatusA</value>
+  </data>
+  <data name="添加项目状态B" xml:space="preserve">
+    <value>AddProjectStatusB</value>
+  </data>
+  <data name="添加项目状态B1" xml:space="preserve">
+    <value>AddProjectStatusB</value>
+  </data>
+  <data name="点动移动模式" xml:space="preserve">
+    <value>PointRunMode</value>
+  </data>
+  <data name="状态" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="直运模式" xml:space="preserve">
+    <value>AlwaysRunMode</value>
+  </data>
+  <data name="相对运动模式" xml:space="preserve">
+    <value>RelativeRunMode</value>
+  </data>
+  <data name="确定" xml:space="preserve">
+    <value>Ensure</value>
+  </data>
+  <data name="禁止" xml:space="preserve">
+    <value>Foebid</value>
+  </data>
+  <data name="离开原点方向" xml:space="preserve">
+    <value>LeaveHomeDirection</value>
+  </data>
+  <data name="移动" xml:space="preserve">
+    <value>MOVE</value>
+  </data>
+  <data name="立即停止" xml:space="preserve">
+    <value>PromptlyStop</value>
+  </data>
+  <data name="类型" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="类型选择" xml:space="preserve">
+    <value>ChooseType</value>
+  </data>
+  <data name="编码计数模式" xml:space="preserve">
+    <value>CodeCountMode</value>
+  </data>
+  <data name="脉冲" xml:space="preserve">
+    <value>Pulse</value>
+  </data>
+  <data name="脉冲模式" xml:space="preserve">
+    <value>PulseMode</value>
+  </data>
+  <data name="读取参数" xml:space="preserve">
+    <value>ReadParams</value>
+  </data>
+  <data name="负方向" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="负极限" xml:space="preserve">
+    <value>LeftLImited</value>
+  </data>
+  <data name="负极限报警" xml:space="preserve">
+    <value>LeftLImitedWarn</value>
+  </data>
+  <data name="软件极限使能" xml:space="preserve">
+    <value>SoftWareLimitEnable</value>
+  </data>
+  <data name="轴" xml:space="preserve">
+    <value>Axis</value>
+  </data>
+  <data name="轴初始化失败" xml:space="preserve">
+    <value>AxisInitialise</value>
+  </data>
+  <data name="轴号" xml:space="preserve">
+    <value>AxisNo</value>
+  </data>
+  <data name="轴名称" xml:space="preserve">
+    <value>AxisName</value>
+  </data>
+  <data name="输入操作" xml:space="preserve">
+    <value>InputOperate</value>
+  </data>
+  <data name="输出操作" xml:space="preserve">
+    <value>OutputOperate</value>
+  </data>
+  <data name="输出类型" xml:space="preserve">
+    <value>OutputType</value>
+  </data>
+  <data name="运动" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="运动超时" xml:space="preserve">
+    <value>RunTimeOut</value>
+  </data>
+  <data name="运动轴选择" xml:space="preserve">
+    <value>ChooseAxis</value>
+  </data>
+  <data name="退出" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="速度名称" xml:space="preserve">
+    <value>SpeedName：</value>
+  </data>
+  <data name="速度名称1" xml:space="preserve">
+    <value>SpeedName：</value>
+  </data>
+  <data name="速度曲线模式" xml:space="preserve">
+    <value>SpeedBightMode</value>
+  </data>
+  <data name="速度曲线模式1" xml:space="preserve">
+    <value>SpeedBightMode</value>
+  </data>
+  <data name="速度类型" xml:space="preserve">
+    <value>SpeedType</value>
+  </data>
+  <data name="速度类型1" xml:space="preserve">
+    <value>SpeedType</value>
+  </data>
+  <data name="速度编辑" xml:space="preserve">
+    <value>EditSpeed</value>
+  </data>
+  <data name="速度编辑1" xml:space="preserve">
+    <value>EditSpeed</value>
+  </data>
+  <data name="速度设置" xml:space="preserve">
+    <value>SpeedSetup</value>
+  </data>
+  <data name="速度设置1" xml:space="preserve">
+    <value>SpeedSetup</value>
+  </data>
+  <data name="速度选择" xml:space="preserve">
+    <value>ChooseSpeed</value>
+  </data>
+  <data name="速度选择1" xml:space="preserve">
+    <value>ChooseSpeed</value>
+  </data>
+  <data name="非AB" xml:space="preserve">
+    <value>NotAB</value>
+  </data>
+  <data name="驱动参数设置" xml:space="preserve">
+    <value>SetDriveParams</value>
+  </data>
+  <data name="高电平" xml:space="preserve">
+    <value>HightSignal</value>
+  </data>
+  <data name="高速" xml:space="preserve">
+    <value>HightSpeed</value>
+  </data>
+</root>

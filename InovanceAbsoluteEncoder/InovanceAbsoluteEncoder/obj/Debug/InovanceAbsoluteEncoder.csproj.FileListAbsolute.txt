@@ -1,0 +1,11 @@
+D:\BP\Repository\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\bin\Debug\InovanceAbsoluteEncoder.dll
+D:\BP\Repository\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\bin\Debug\InovanceAbsoluteEncoder.pdb
+D:\BP\Repository\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\obj\Debug\InovanceAbsoluteEncoder.csproj.CoreCompileInputs.cache
+D:\BP\Repository\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\obj\Debug\InovanceAbsoluteEncoder.dll
+D:\BP\Repository\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\obj\Debug\InovanceAbsoluteEncoder.pdb
+F:\自动化软件\162项目\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\bin\Debug\InovanceAbsoluteEncoder.dll
+F:\自动化软件\162项目\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\bin\Debug\InovanceAbsoluteEncoder.pdb
+F:\自动化软件\162项目\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\obj\Debug\InovanceAbsoluteEncoder.csprojAssemblyReference.cache
+F:\自动化软件\162项目\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\obj\Debug\InovanceAbsoluteEncoder.csproj.CoreCompileInputs.cache
+F:\自动化软件\162项目\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\obj\Debug\InovanceAbsoluteEncoder.dll
+F:\自动化软件\162项目\InovanceAbsoluteEncoder\InovanceAbsoluteEncoder\obj\Debug\InovanceAbsoluteEncoder.pdb

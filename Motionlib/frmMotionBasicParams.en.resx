@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>CodeCountMode</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Motion Axis Selection</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Axis</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 12</value>
+  </data>
+  <data name="Label22.Text" xml:space="preserve">
+    <value>EMGValidSignal</value>
+  </data>
+  <data name="cboSoftELEnable.Items" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="cboSoftELEnable.Items1" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="cboSoftELEnable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 97</value>
+  </data>
+  <data name="cboSoftELEnable.Text" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="cboORGSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="cboORGSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="cboORGSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 16</value>
+  </data>
+  <data name="cboORGSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="cboORGSignal.Text" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="GroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 229</value>
+  </data>
+  <data name="GroupBox3.Text" xml:space="preserve">
+    <value>SetHome</value>
+  </data>
+  <data name="EZSingl_ck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 12</value>
+  </data>
+  <data name="EZSingl_ck.Text" xml:space="preserve">
+    <value>EZ Vaild Signal</value>
+  </data>
+  <data name="EZSignal.Items" xml:space="preserve">
+    <value>Low level</value>
+  </data>
+  <data name="EZSignal.Items1" xml:space="preserve">
+    <value>High level</value>
+  </data>
+  <data name="EZSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 94</value>
+  </data>
+  <data name="EZSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="EZSignal.Text" xml:space="preserve">
+    <value>Low level</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 12</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Leave Home Direction</value>
+  </data>
+  <data name="LeaveHomeDir.Items" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="LeaveHomeDir.Items1" xml:space="preserve">
+    <value>Positive</value>
+  </data>
+  <data name="LeaveHomeDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 201</value>
+  </data>
+  <data name="LeaveHomeDir.Text" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="nupdORGEZ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 118</value>
+  </data>
+  <data name="cboORGFilter.Items" xml:space="preserve">
+    <value>Forbidden</value>
+  </data>
+  <data name="cboORGFilter.Items1" xml:space="preserve">
+    <value>Allow</value>
+  </data>
+  <data name="cboORGFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 42</value>
+  </data>
+  <data name="cboORGFilter.Text" xml:space="preserve">
+    <value>Allow</value>
+  </data>
+  <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 12</value>
+  </data>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>BackHomeEZCount</value>
+  </data>
+  <data name="cboORGMode.Items2" xml:space="preserve">
+    <value>Home+EZ anti-find</value>
+  </data>
+  <data name="cboORGMode.Items3" xml:space="preserve">
+    <value>Find EZ</value>
+  </data>
+  <data name="cboORGMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 68</value>
+  </data>
+  <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 12</value>
+  </data>
+  <data name="Label11.Text" xml:space="preserve">
+    <value>BackHomeSpeedMode</value>
+  </data>
+  <data name="cboORGDir.Items" xml:space="preserve">
+    <value>Positive</value>
+  </data>
+  <data name="cboORGDir.Items1" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="cboORGDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 145</value>
+  </data>
+  <data name="cboORGDir.Text" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 12</value>
+  </data>
+  <data name="Label10.Text" xml:space="preserve">
+    <value>BackHomeDirection</value>
+  </data>
+  <data name="cboORGSpeed.Items" xml:space="preserve">
+    <value>Low Speed</value>
+  </data>
+  <data name="cboORGSpeed.Items1" xml:space="preserve">
+    <value>High Speed</value>
+  </data>
+  <data name="cboORGSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 171</value>
+  </data>
+  <data name="cboORGSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="cboORGSpeed.Text" xml:space="preserve">
+    <value>Low Speed</value>
+  </data>
+  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>BackHomeMode</value>
+  </data>
+  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 12</value>
+  </data>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>HomeValidSignal</value>
+  </data>
+  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="Label7.Text" xml:space="preserve">
+    <value>HomeFilterEnable</value>
+  </data>
+  <data name="Label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 12</value>
+  </data>
+  <data name="Label21.Text" xml:space="preserve">
+    <value>EMGSignalEnable</value>
+  </data>
+  <data name="btnLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 30</value>
+  </data>
+  <data name="btnLoad.Text" xml:space="preserve">
+    <value>Read Params</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 30</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save Params</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Pulse Mode</value>
+  </data>
+  <data name="cboCounter.Items" xml:space="preserve">
+    <value>NotAB</value>
+  </data>
+  <data name="cboCounter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 40</value>
+  </data>
+  <data name="cboCounter.Text" xml:space="preserve">
+    <value>NotAB</value>
+  </data>
+  <data name="cboINPSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="cboINPSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="cboINPSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 146</value>
+  </data>
+  <data name="cboINPSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="cboINPSignal.Text" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="Label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 12</value>
+  </data>
+  <data name="Label25.Text" xml:space="preserve">
+    <value>SoftWare Limit Enable</value>
+  </data>
+  <data name="cboEMGSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="cboEMGSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="cboEMGSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 383</value>
+  </data>
+  <data name="cboEMGSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 20</value>
+  </data>
+  <data name="cboEMGSignal.Text" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="cboEMGEable.Items" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="cboEMGEable.Items1" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="cboEMGEable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 357</value>
+  </data>
+  <data name="cboEMGEable.Text" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="cboPulseType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 12</value>
+  </data>
+  <data name="cboALMSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="cboALMSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="cboALMSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 68</value>
+  </data>
+  <data name="cboALMSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="cboALMSignal.Text" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="Label12.Text" xml:space="preserve">
+    <value>ALM Valid Signal</value>
+  </data>
+  <data name="cboALMMode.Items" xml:space="preserve">
+    <value>Stop Immediately</value>
+  </data>
+  <data name="cboALMMode.Items1" xml:space="preserve">
+    <value>Deceleration Stops</value>
+  </data>
+  <data name="cboALMMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 94</value>
+  </data>
+  <data name="cboALMMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 20</value>
+  </data>
+  <data name="cboALMMode.Text" xml:space="preserve">
+    <value>Stop Immediately</value>
+  </data>
+  <data name="Label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
+  </data>
+  <data name="Label13.Text" xml:space="preserve">
+    <value>ALM Stop Mode</value>
+  </data>
+  <data name="cboINPEnable.Items" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="cboINPEnable.Items1" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="cboINPEnable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 120</value>
+  </data>
+  <data name="cboINPEnable.Text" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 515</value>
+  </data>
+  <data name="GroupBox2.Text" xml:space="preserve">
+    <value>Parameter Settings</value>
+  </data>
+  <data name="MotorCount_nup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 488</value>
+  </data>
+  <data name="Label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 12</value>
+  </data>
+  <data name="Label24.Text" xml:space="preserve">
+    <value>Motor Pulse Number</value>
+  </data>
+  <data name="Label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 12</value>
+  </data>
+  <data name="Label23.Text" xml:space="preserve">
+    <value>Encoder Count Mode</value>
+  </data>
+  <data name="cboEncodeMode.Items" xml:space="preserve">
+    <value>Positive Count</value>
+  </data>
+  <data name="cboEncodeMode.Items1" xml:space="preserve">
+    <value>Negative count</value>
+  </data>
+  <data name="cboEncodeMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 68</value>
+  </data>
+  <data name="cboEncodeMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="cboEncodeMode.Text" xml:space="preserve">
+    <value>Negative Count</value>
+  </data>
+  <data name="RunCompare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 463</value>
+  </data>
+  <data name="Label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 472</value>
+  </data>
+  <data name="Label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 12</value>
+  </data>
+  <data name="Label27.Text" xml:space="preserve">
+    <value>Transmission Ratio</value>
+  </data>
+  <data name="Label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="Label26.Text" xml:space="preserve">
+    <value>Speed Bight Mode</value>
+  </data>
+  <data name="Label41.Text" xml:space="preserve">
+    <value>StopMode</value>
+  </data>
+  <data name="ComSTMode.Items" xml:space="preserve">
+    <value>S Type</value>
+  </data>
+  <data name="ComSTMode.Items1" xml:space="preserve">
+    <value>T Type</value>
+  </data>
+  <data name="ComSTMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 438</value>
+  </data>
+  <data name="ComSTMode.Text" xml:space="preserve">
+    <value>S Type</value>
+  </data>
+  <data name="ComStopMode.Items" xml:space="preserve">
+    <value>Deceleration Stops</value>
+  </data>
+  <data name="ComStopMode.Items1" xml:space="preserve">
+    <value>Stop Immediately</value>
+  </data>
+  <data name="ComStopMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 412</value>
+  </data>
+  <data name="ComStopMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 20</value>
+  </data>
+  <data name="ComStopMode.Text" xml:space="preserve">
+    <value>Stop Immediately</value>
+  </data>
+  <data name="GroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 467</value>
+  </data>
+  <data name="GroupBox4.Text" xml:space="preserve">
+    <value>Drive parameter settings</value>
+  </data>
+  <data name="Label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="Label42.Text" xml:space="preserve">
+    <value>ERC Signal</value>
+  </data>
+  <data name="ComERCSelSingel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 273</value>
+  </data>
+  <data name="Label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 441</value>
+  </data>
+  <data name="Label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="Label39.Text" xml:space="preserve">
+    <value>PCS Valid Signal</value>
+  </data>
+  <data name="Label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="Label36.Text" xml:space="preserve">
+    <value>SD Work Mode</value>
+  </data>
+  <data name="Label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 352</value>
+  </data>
+  <data name="Label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 12</value>
+  </data>
+  <data name="Label37.Text" xml:space="preserve">
+    <value>SD Valid Signal</value>
+  </data>
+  <data name="Label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="Label40.Text" xml:space="preserve">
+    <value>PCS Enable</value>
+  </data>
+  <data name="ComPCSSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="ComPCSSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="ComPCSSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 436</value>
+  </data>
+  <data name="ComPCSSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="ComPCSSignal.Text" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="ComSDMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 379</value>
+  </data>
+  <data name="Label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="Label38.Text" xml:space="preserve">
+    <value>SD Work Mode</value>
+  </data>
+  <data name="ComPCSEnable.Items" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="ComPCSEnable.Items1" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="ComPCSEnable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 409</value>
+  </data>
+  <data name="ComPCSEnable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="ComPCSEnable.Text" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="ComSDSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="ComSDSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="ComSDSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 352</value>
+  </data>
+  <data name="ComSDSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="ComSDSignal.Text" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="ComSDEnable.Items" xml:space="preserve">
+    <value>Forbidden</value>
+  </data>
+  <data name="ComSDEnable.Items1" xml:space="preserve">
+    <value>Allow</value>
+  </data>
+  <data name="ComSDEnable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 326</value>
+  </data>
+  <data name="ComSDEnable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="ComSDEnable.Text" xml:space="preserve">
+    <value>Forbidden</value>
+  </data>
+  <data name="ComSEVONSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="ComSEVONSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="ComSEVONSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 14</value>
+  </data>
+  <data name="ComSEVONSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="ComSEVONSignal.Text" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="Label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="Label34.Text" xml:space="preserve">
+    <value>SEVON Signal</value>
+  </data>
+  <data name="ComboRaySignel.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="ComboRaySignel.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="ComboRaySignel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 40</value>
+  </data>
+  <data name="ComboRaySignel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="ComboRaySignel.Text" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="Label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="Label35.Text" xml:space="preserve">
+    <value>SEVON RAY Signal</value>
+  </data>
+  <data name="Label20.Text" xml:space="preserve">
+    <value>Set EL</value>
+  </data>
+  <data name="Label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
+  </data>
+  <data name="Label19.Text" xml:space="preserve">
+    <value>ERC Shut Time</value>
+  </data>
+  <data name="cboELMode.Items" xml:space="preserve">
+    <value>Low effective</value>
+  </data>
+  <data name="cboELMode.Items1" xml:space="preserve">
+    <value>Highly effective</value>
+  </data>
+  <data name="cboELMode.Items2" xml:space="preserve">
+    <value>Positive and negative</value>
+  </data>
+  <data name="cboELMode.Items3" xml:space="preserve">
+    <value>Positive high negative low effective</value>
+  </data>
+  <data name="cboELMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 297</value>
+  </data>
+  <data name="cboELMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 20</value>
+  </data>
+  <data name="cboELMode.Text" xml:space="preserve">
+    <value>Low effective</value>
+  </data>
+  <data name="Label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 12</value>
+  </data>
+  <data name="Label18.Text" xml:space="preserve">
+    <value>ERC Valid Width</value>
+  </data>
+  <data name="Label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="Label17.Text" xml:space="preserve">
+    <value>ERC Valid Signal</value>
+  </data>
+  <data name="cboERCOfftime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 249</value>
+  </data>
+  <data name="Label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 12</value>
+  </data>
+  <data name="Label14.Text" xml:space="preserve">
+    <value>INP Signal Enable</value>
+  </data>
+  <data name="Label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 12</value>
+  </data>
+  <data name="Label16.Text" xml:space="preserve">
+    <value>ERC Signal Enable</value>
+  </data>
+  <data name="Label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="Label15.Text" xml:space="preserve">
+    <value>INP Valid Signal</value>
+  </data>
+  <data name="cboERCWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 223</value>
+  </data>
+  <data name="cboERCEable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 172</value>
+  </data>
+  <data name="cboERCSignal.Items" xml:space="preserve">
+    <value>Low Level</value>
+  </data>
+  <data name="cboERCSignal.Items1" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="cboERCSignal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 198</value>
+  </data>
+  <data name="cboERCSignal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="cboERCSignal.Text" xml:space="preserve">
+    <value>High Level</value>
+  </data>
+  <data name="ImportParam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 30</value>
+  </data>
+  <data name="ImportParam.Text" xml:space="preserve">
+    <value>Import Params</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>581, 633</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Basic motion settings</value>
+  </data>
+</root>

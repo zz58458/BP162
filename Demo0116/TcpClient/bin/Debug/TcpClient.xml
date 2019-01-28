@@ -1,0 +1,1532 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TcpClient
+</name>
+</assembly>
+<members>
+<member name="T:TcpClient.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TcpClient.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TcpClient.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:TcpClient.BaseFunction.Close">
+ <summary>
+ 关闭控制卡，释放系统资源
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.PulseOutmode(System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴的脉冲输出模式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="outmode">脉冲输出方式选择</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SD(System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置SD信号有效的逻辑电平及其工作方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">设置SD信号有效的逻辑电平及其工作方式</param>
+ <param name="sd_logic">设置SD信号的有效逻辑电平：0－低电平有效，1－高电平有效。</param>
+ <param name="sd_mode">设置SD信号的工作方式</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.PCS(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置允许/禁止PCS外部信号在运动中改变目标位置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+ <param name="pcs_logic">设置PCS信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.INP(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置允许/禁止INP信号及其有效的逻辑电平
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+ <param name="inp_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ERC(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置允许/禁止ERC信号及其有效电平和输出方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">范围：0 - 3;</param>
+ <param name="erc_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <param name="erc_width">误差清除信号ERC有效输出宽度：</param>
+ <param name="erc_off_time">ERC信号的关断时间：</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ALM(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置ALM的逻辑电平及其工作方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="alm_logic">ALM信号的输入电平：0－低电平有效，1－高电平有效</param>
+ <param name="alm_action">ALM信号的制动方式：0－立即停止，1－减速停止</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ELMODE(System.Int16,System.Int16)">
+ <summary>
+ 设置EL信号的有效电平及制动方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="el_mode">EL有效电平和制动方式:0－立即停、低有效，1－减速停、低有效，2－立即停、高有效，3－减速停、高有效</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetHome(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置ORG信号的有效电平，以及允许/禁止滤波功能
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="org_logic">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <param name="filter">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadSEVON(System.Int16)">
+ <summary>
+ 读取指定轴的“伺服使能”端子的电平状态
+ </summary>
+ <param name="axis"></param>
+ <returns>0－低电平，1－高电平。SEVON输出口初始状态可选。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.writeSEVON(System.Int16,System.Int16)">
+ <summary>
+ 输出对指定轴的伺服使能端子的控制
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="on_off">设定管脚电平状态：0－低，1－高。SEVON输出口初始状态可选。</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.WriteERC(System.Int16,System.Int16)">
+ <summary>
+ 控制指定轴“误差清除”端子信号的输出
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="sel">0－复位ERC信号，1－输出ERC信号</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadRDY(System.Int16)">
+ <summary>
+ 读取指定运动轴的“伺服准备好”端子的电平状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns>0－低电平，1－高电平</returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadInbit(System.Int16,System.Int16)">
+ <summary>
+ 读取通用输入点
+ </summary>
+ <param name="cardno">对应的卡号</param>
+ <param name="BitNo">对应的IO点号</param>
+ <returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.WriteOutbit(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 写入通用输出点
+ </summary>
+ <param name="cardno">对应的卡号</param>
+ <param name="BitNo">对应的IO点</param>
+ <param name="on_off">要写入ON  OFF  1为ON高电平 0为OFF低电平</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadOutbit(System.Int16,System.Int16)">
+ <summary>
+ 读取通用输出点
+ </summary>
+ <param name="cardno">对应卡号</param>
+ <param name="BitNo">对应的IO点</param>
+ <returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadInport(System.Int16)">
+ <summary>
+ 读取卡所有通用输入口电平
+ </summary>
+ <param name="card">对应卡号</param>
+ <returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输入端口值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadOutport(System.Int16)">
+ <summary>
+ 读取指定控制卡的全部通用输出口的电平状态
+ </summary>
+ <param name="card">对应卡号</param>
+ <returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.WriteOutport(System.Int16,System.Int32)">
+ <summary>
+ 指定控制卡的全部通用输出口的电平状态
+ </summary>
+ <param name="cardno">对应卡号</param>
+ <param name="Port_Value"></param>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值。
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.HomeMode(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设定指定轴的回原点模式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="mode">回原点的信号模式</param>
+ <param name="EZ_count"></param>遇到原点信号后，EZ 信号出现 EZ_count 指定的次数,仅当 mode=1 时该设置有效
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.HomeMove(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 单轴回原点运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="home_mode">回原点方式</param>
+ <param name="vel_mode"></param>回原点速度：0－低速回原点，1－高速回原点
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.DecelStop(System.Int16,System.Double)">
+ <summary>
+ 指定轴减速停止，调用此函数时立即减速，减速到起始速度后停止脉冲输出。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Tdec">减速时间</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ImdStop(System.Int16)">
+ <summary>
+ 使指定轴立即停止，没有任何减速的过程
+ </summary>
+ <param name="axis">指定轴号</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.EmgStop">
+ <summary>
+ 使所有轴紧急停止
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SimultaneousStop(System.Int16)">
+ <summary>
+ 在指定轴的 CSTP 端子上输出一个单脉冲的停止信号,如果有多个轴的CSTP 信号相连接，则所有相连运动轴将同时停止运行。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetPosition(System.Int16)">
+ <summary>
+ 读取指定轴的指令脉冲位置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>返回当前轴脉冲
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetPosition(System.Int16,System.Int32)">
+ <summary>
+ 设定指定轴的指令脉冲位置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="current_position">需要给定轴当前脉冲</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetCheckDone(System.Int16)">
+ <summary>
+ 检测指定轴的运动状态，停止或是在运行中
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>0 表示指定轴正在运行，1 表示指定轴已停止
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetPrebuffStatus(System.Int16)">
+ <summary>
+ 读取指定轴的预置缓冲区的状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>0－缓冲区空，1－缓冲区满
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetIoStatus(System.Int16)">
+ <summary>
+ 读取指定轴有关运动信号的状态，包含指定轴的专用 I/O 状态。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>返回值去2进制后16位 每个位代表不同IO
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetAxisStatus(System.Int16)">
+ <summary>
+ 读取指定轴的主状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetRsts(System.Int16)">
+ <summary>
+ 读取指定轴的外部信号状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>返回8位  每一位不同含义
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.TPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以对称梯形速度曲线做定长位移运动。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ExTPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以非对称梯形速度曲线做定长位移运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以对称 S 形速度曲线做定长位移运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist">（绝对/相对）位移值，单位：脉冲数</param>
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ExSPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以非对称 S 形速度曲线做定长位移运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SVmove(System.Int16,System.Int32)">
+ <summary>
+ 使指定轴以 S 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.TVmove(System.Int16,System.Int32)">
+ <summary>
+ 使指定轴以 T 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.VarietySpeed(System.Int16,System.Int16,System.Double)">
+ <summary>
+ 设定指定轴改变的速度上限，及变速使能
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="chg_enable"></param>禁止/使能连续运行中变速（禁止保留）
+ <param name="Max_Vel"></param>运行速度的变速上限值，单位 pps
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadCurrentSpeed(System.Int16)">
+ <summary>
+ 读取当前速度值，单位 pps
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>指定轴的速度脉冲数
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ChangeSpeed(System.Int16,System.Double)">
+ <summary>
+ 在线改变指定轴的当前运动速度,且在调用前必须先调用 d2410_variety_speed_range 设置变速范围和使能。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Curr_Vel"></param>新的运行速度，单位 pps
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ResetTargetPos(System.Int16,System.Double)">
+ <summary>
+  在线改变目标位
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="NewPos">新目标位</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetVectorProfile(System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ 设定插补矢量运动曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetProfile(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ 设定梯形曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetSProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+ <summary>
+ 设定 S 形曲线运动的起始速度、运行速度、加速时间、S 段加减速脉冲数
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Sacc"></param>S 加速段脉冲数
+ <param name="Sdec"></param>S 减速段脉冲数
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetSTProfile(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ 设定 S 形曲线运动的起始速度、运行速度、总加速时间、S 段加减速时间
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ResetTargetPosition(System.Int16,System.Int32)">
+ <summary>
+ 在单轴绝对运动中改变目标位置。注意：该函数仅能在绝对位置模式下使用
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>绝对位置值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.Line2(System.Int16,System.Int32,System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 指定任意两轴以对称的梯形速度曲线做插补运动
+ </summary>
+ <param name="AXIS1"></param>指定两轴插补的第一轴
+ <param name="Dist1"></param>指定 axis1 的位移值，单位：脉冲数
+ <param name="AXIS2"></param>指定两轴插补的第二轴
+ <param name="Dist2"></param>指定 axis2 的位移值，单位：脉冲数
+ <param name="posi_mode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.Line3(System.Collections.ArrayList,System.Int32,System.Int32,System.Int32,System.Int16)">
+ <summary>
+ 指定任意三轴以对称的梯形速度曲线做插补运动
+ </summary>
+ <param name="axis"></param>轴号列表的指针
+ <param name="Dist1"></param>指定 axis[0]轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定 axis[1]轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定 axis[2]轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.Line4(System.Int16,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16)">
+ <summary>
+ 指定四轴以对称的梯形速度曲线做插补运动
+ </summary>
+ <param name="cardno"></param>指定插补运动的板卡号, 范围（0 － N - 1 ,N 为卡数）
+ <param name="Dist1"></param>指定第一轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定第二轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定第三轴的位移值，单位：脉冲数
+ <param name="Dist4"></param>指定第四轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+ <summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+ <param name="axis"></param>轴号列表指针
+ <param name="target_pos"></param>目标绝对位置列表指针，单位：脉冲数
+ <param name="cen_pos"></param>圆心绝对位置列表指针，单位：脉冲数
+ <param name="arc_dir"></param>圆弧方向：0 表示顺时针，1 表示逆时针
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.relArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+ <summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标相对位置和方向作圆弧插补运动，
+ </summary>
+ <param name="axis"></param>轴号列表指针
+ <param name="target_pos"></param>目标相对位置列表指针, 单位：脉冲数
+ <param name="cen_pos"></param>圆心相对位置列表指针, 单位：脉冲数
+ <param name="arc_dir"></param>圆弧方向：0 表示顺时针，1 表示逆时针
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetHandwheelInmode(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置输入手轮脉冲信号的计数方式
+ </summary>
+ <param name="axis"></param>指定轴号
+ <param name="inmode"></param>表示输入方式：0－A、B 相位正交计数，1－双脉冲信号
+ <param name="count_dir"></param>计数器的计数方向及倍率设置：设置手轮的倍率, 正数表示默认方向, 负数表示与默认方向相反.
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.HandwheelMove(System.Int16,System.Double)">
+ <summary>
+ 启动指定轴的手轮脉冲运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="vh"></param>最大脉冲输入频率，单位 pps
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetEncoder(System.Int16)">
+ <summary>
+ 读取指定轴编码器反馈位置脉冲计数值
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>位置反馈脉冲值，单位：脉冲数
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetEncode(System.Int16,System.Int32)">
+ <summary>
+ 设置指定轴编码器反馈脉冲计数值，范围：28 位有符号数
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="encoder_value"></param>编码器的设定值。
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.CounterConfig(System.Int16,System.Int16)">
+ <summary>
+ 设置编码器的计数方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="mode"></param>编码器的计数方式,0 非 A/B 相 (脉冲/方向)  1 1×A/B  2 2× A/B  3 4× A/B
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ConfigLTC(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴“锁存”信号的有效电平及其和工作方式。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="ltc_logic"></param>LTC 信号逻辑电平：0－低有效，1－高有效
+ <param name="ltc_mode"></param>保留
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetLatchValue(System.Int16)">
+ <summary>
+ 读取编码器锁存器的值
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>锁存器内的编码器脉冲数，单位：脉冲
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetLatchFlag(System.Int16)">
+ <summary>
+ 读取指定控制卡的锁存器的标志位
+ </summary>
+ <param name="axis"></param>指定控制卡号, 范围（0 － N - 1 ,N 为卡数）
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ResetLatchFlag(System.Int16)">
+ <summary>
+ 复位指定控制卡的锁存器的标志位
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetCounterFlag(System.Int16)">
+ <summary>
+ 读取指定控制卡的计数器的标识位
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ResetCounterFlag(System.Int16)">
+ <summary>
+ 复位计数器的计数标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ResetClearFlag(System.Int16)">
+ <summary>
+ 复位计数器的清零标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.Config_EZ(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴的 EZ 信号的有效电平及其作用
+ </summary>
+ <param name="axis"></param>指定轴号
+ <param name="ez_logic"></param>EZ 信号逻辑电平：0－低有效，1－高有效
+ <param name="ez_mode"></param>EZ 信号的工作方式：0－EZ 信号无效，1－EZ 是计数器复位信号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ConfigLatchMode(System.Int16,System.Int16)">
+ <summary>
+ 设置锁存方式为单轴锁存或是四轴同时锁存
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <param name="all_enable"></param>锁存方式 ：0－单独锁存， 1－四轴同时锁存
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.TrigerChunnel(System.Int16,System.Int16)">
+ <summary>
+ 选择全部锁存时的外触发信号通道；可以由二个信号通道输入， 即 LTC0,
+ </summary>
+ <param name="cardno"></param>卡号
+ <param name="num"></param>信号通道选择号 0：LTC0 锁存四个轴 1：LTC1 锁存四个轴
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetSpeakerLogic(System.Int16,System.Int16)">
+ <summary>
+ 选择编码器 Speaker 和 LED 的输出逻辑, 默认为低有效
+ </summary>
+ <param name="cardno"></param>卡号
+ <param name="logic"></param> 0：低有效， 1：高有效
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ConfigEMG(System.Int16,System.Int16,System.Int16)">
+ <summary>
+  EMG 信号设置，急停信号有效后会立即停止所有轴
+ </summary>
+ <param name="cardno"></param>卡号
+ <param name="enable"></param>0：无效; 1:有效
+ <param name="emg_logic"></param>0：:低有效; 1:高有效
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ConfigLTCFilter(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="cardno"></param>
+ <param name="width"></param>
+ <param name="enable"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ConfigEncoderFilter(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="width"></param>
+ <param name="enable"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ReadCMP(System.Int16)">
+ <summary>
+ 读取指定轴的比较输出端口的电平
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>1－高电平；0－低电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.WriteCMP(System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴的位置比较输出端口的电平
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="on_off"></param>on_off 1－高电平；0－低电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ConfigCMP(System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 配置位置比较输出端口的功能
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="cmp1_enable">配置 CMP1(X 轴)、CMP2(Y 轴)、CMP3(Z 轴)、CMP4(A</param>
+ <param name="cmp2_enable">配置 CMP1’(X 轴)、CMP2’(Y 轴)、CMP3’(Z 轴)、</param>
+ <param name="CMP_logic">0－负逻辑；1－正逻辑</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ConfigComparator(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 配置指定轴 2 个比较器的触发条件。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="cmp1_condition">比较器 1 的触发条件</param>
+ <param name="cmp2_condition">比较器 2 的触发条件</param>
+ <param name="source_sel">配置计数器类型</param>
+ <param name="SL_action"></param>保留
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetComparatorData(System.Int16,System.Int32,System.Int32)">
+ <summary>
+ 预置比较器数值
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="cmp1_data"></param>比较器 1 的值
+ <param name="cmp2_data"></param>比较器 2 的值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.GetEquiv(System.Int16,System.Double@)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="equiv"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetEquiv(System.Int16,System.Double)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="new_equiv"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.ArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="target_pos"></param>
+ <param name="cen_pos"></param>
+ <param name="arc_dir"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.RelArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="rel_pos"></param>
+ <param name="rel_cen"></param>
+ <param name="arc_dir"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetTMoveAll(System.Int16,System.Int16@,System.Int32@,System.Int16)">
+ <summary>
+ 设置多轴同步运动的运动参数
+ </summary>
+ <param name="TotalAxes"></param>TotalAxes 同步运动轴的数量
+ <param name="pAxis"></param>轴号列表指针
+ <param name="pDist"></param>距离列表指针，单位：当量脉冲数
+ <param name="posi_mode"></param>位置模式：0 表示相对位置，1 表示绝对位置
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.StartMoveAll(System.Int16)">
+ <summary>
+ 按照预设运动参数，开始多轴同步运动
+ </summary>
+ <param name="FirstAxis"></param>FirstAxis 第一轴轴号
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetSyncOption(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 多轴同步选项的设置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="sync_stop_on"></param>sync_stop_on 1 表示有 CSTP,轴停止；0 表示有 CSTP 时，轴不停
+ <param name="cstop_output_on"></param>cstop_output_on 1 表示当异常停止时，输出 CSTP；0 表示不输出
+ <param name="sync_option1"></param> 0 表示立即启动该功能；1 表示等待 CSTA 后启动该功能
+ <param name="sync_option2"></param>保留
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.SetSyncStopMode(System.Int16,System.Int16)">
+ <summary>
+ 设置同步停止的模式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="stop_mode"></param>stop_mode 停止模式：0 表示立即停止；1 表示减速停止
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.BoardRest">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.axisIOmap(System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.Double)">
+ <summary>
+ 轴IO映射设置
+ </summary>
+ <param name="CardNo">卡号</param>
+ <param name="axis">轴号</param>
+ <param name="IoType">映射类型:0-正限位信号，1-负限位信号，2-原点信号，3-急停信号，4-减速停止信号，5-伺服报警信号，6-伺服准备信号，7-伺服到位信号</param>
+ <param name="MapIoType">映射对应信号类型：0-正限位输入端口，1-负限位输入端口，2-原点输入端口，3-伺服报警输入端口，4-伺服准备输入端口，5-伺服到位输入端口，6-通用输入端口</param>
+ <param name="MapIoIndex">轴映射IO索引号：0-15（MapIoType=6），0-7（MapIoType=0-5）</param>
+ <param name="Filter">滤波时间：单位：s</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient.BaseFunction.setEmgModel(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+ <summary>
+ 设置硬件急停模式
+ </summary>
+ <param name="CardNo">卡号</param>
+ <param name="axis">轴号</param>
+ <param name="enable">使能：0-禁止，1-允许</param>
+ <param name="emg_logic">有效电平：0-低电平，1-高电平</param>
+ <returns>错误代码</returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.Close">
+ <summary>
+ 关闭控制卡，释放系统资源
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.PulseOutmode(System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴的脉冲输出模式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="outmode">脉冲输出方式选择：1-脉冲+方向，2-正负脉冲</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SD(System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置SD信号有效的逻辑电平及其工作方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">设置SD信号有效的逻辑电平及其工作方式</param>
+ <param name="sd_logic">设置SD信号的有效逻辑电平：0－低电平有效，1－高电平有效。</param>
+ <param name="sd_mode">设置SD信号的工作方式</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.PCS(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置允许/禁止PCS外部信号在运动中改变目标位置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+ <param name="pcs_logic">设置PCS信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.INP(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置允许/禁止INP信号及其有效的逻辑电平
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+ <param name="inp_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ERC(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置允许/禁止ERC信号及其有效电平和输出方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="enable">范围：0 - 3;</param>
+ <param name="erc_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <param name="erc_width">误差清除信号ERC有效输出宽度：</param>
+ <param name="erc_off_time">ERC信号的关断时间：</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ALM(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置ALM的逻辑电平及其工作方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="alm_logic">ALM信号的输入电平：0－低电平有效，1－高电平有效</param>
+ <param name="alm_action">ALM信号的制动方式：0－立即停止，1－减速停止</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ELMODE(System.Int16,System.Int16)">
+ <summary>
+ 设置EL信号的有效电平及制动方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="el_mode">EL有效电平和制动方式</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetHome(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置ORG信号的有效电平，以及允许/禁止滤波功能
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="org_logic">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+ 目前只有NPN模式的
+ <param name="filter">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadSEVON(System.Int16)">
+ <summary>
+ 读取指定轴的“伺服使能”端子的电平状态
+ </summary>
+ <param name="axis"></param>
+ <returns>0－低电平，1－高电平。SEVON输出口初始状态可选。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.writeSEVON(System.Int16,System.Int16)">
+ <summary>
+ 输出对指定轴的伺服使能端子的控制
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="on_off">设定管脚电平状态：0－低，1－高。SEVON输出口初始状态可选。</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.WriteERC(System.Int16,System.Int16)">
+ <summary>
+ 控制指定轴“误差清除”端子信号的输出
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="sel">0－复位ERC信号，1－输出ERC信号</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadRDY(System.Int16)">
+ <summary>
+ 读取指定运动轴的“伺服准备好”端子的电平状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns>0－低电平，1－高电平</returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadInbit(System.Int16,System.Int16)">
+ <summary>
+ 读取通用输入点
+ </summary>
+ <param name="cardno">对应的卡号</param>
+ <param name="BitNo">对应的IO点号</param>
+ <returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.WriteOutbit(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 写入通用输出点
+ </summary>
+ <param name="cardno">对应的卡号</param>
+ <param name="BitNo">对应的IO点</param>
+ <param name="on_off">要写入ON  OFF  1为ON高电平 0为OFF低电平</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadOutbit(System.Int16,System.Int16)">
+ <summary>
+ 读取通用输出点
+ </summary>
+ <param name="cardno">对应卡号</param>
+ <param name="BitNo">对应的IO点</param>
+ <returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadInport(System.Int16)">
+ <summary>
+ 读取卡所有通用输入口电平
+ </summary>
+ <param name="card">对应卡号</param>
+ <returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输入端口值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadOutport(System.Int16)">
+ <summary>
+ 读取指定控制卡的全部通用输出口的电平状态
+ </summary>
+ <param name="card">对应卡号</param>
+ <returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.WriteOutport(System.Int16,System.Int32)">
+ <summary>
+ 指定控制卡的全部通用输出口的电平状态
+ </summary>
+ <param name="cardno">对应卡号</param>
+ <param name="Port_Value"></param>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值。
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.HomeMode(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设定指定轴的回原点模式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="mode">回原点的信号模式</param>
+ <param name="EZ_count"></param>遇到原点信号后，EZ 信号出现 EZ_count 指定的次数,仅当 mode=1 时该设置有效
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.HomeMove(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 单轴回原点运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="home_mode">回原点方式</param>
+ <param name="vel_mode"></param>回原点速度：0－低速回原点，1－高速回原点
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.DecelStop(System.Int16,System.Double)">
+ <summary>
+ 指定轴减速停止，调用此函数时立即减速，减速到起始速度后停止脉冲输出。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Tdec">减速时间</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ImdStop(System.Int16)">
+ <summary>
+ 使指定轴立即停止，没有任何减速的过程
+ </summary>
+ <param name="axis">指定轴号</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.EmgStop">
+ <summary>
+ 使所有轴紧急停止
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SimultaneousStop(System.Int16)">
+ <summary>
+ 在指定轴的 CSTP 端子上输出一个单脉冲的停止信号,如果有多个轴的CSTP 信号相连接，则所有相连运动轴将同时停止运行。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetPosition(System.Int16)">
+ <summary>
+ 读取指定轴的指令脉冲位置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>返回当前轴脉冲
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetPosition(System.Int16,System.Int32)">
+ <summary>
+ 设定指定轴的指令脉冲位置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="current_position">需要给定轴当前脉冲</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetCheckDone(System.Int16)">
+ <summary>
+ 检测指定轴的运动状态，停止或是在运行中
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>0 表示指定轴正在运行，1 表示指定轴已停止
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetPrebuffStatus(System.Int16)">
+ <summary>
+ 读取指定轴的预置缓冲区的状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>0－缓冲区空，1－缓冲区满
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetIoStatus(System.Int16)">
+ <summary>
+ 读取指定轴有关运动信号的状态，包含指定轴的专用 I/O 状态。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>返回值去2进制后16位 每个位代表不同IO
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetAxisStatus(System.Int16)">
+ <summary>
+ 读取指定轴的主状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetRsts(System.Int16)">
+ <summary>
+ 读取指定轴的外部信号状态
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>返回8位  每一位不同含义
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.TPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以对称梯形速度曲线做定长位移运动。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ExTPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以非对称梯形速度曲线做定长位移运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以对称 S 形速度曲线做定长位移运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist">（绝对/相对）位移值，单位：脉冲数</param>
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ExSPmove(System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 使指定轴以非对称 S 形速度曲线做定长位移运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SVmove(System.Int16,System.Int32)">
+ <summary>
+ 使指定轴以 S 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.TVmove(System.Int16,System.Int32)">
+ <summary>
+ 使指定轴以 T 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.VarietySpeed(System.Int16,System.Int16,System.Double)">
+ <summary>
+ 设定指定轴改变的速度上限，及变速使能
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="chg_enable"></param>禁止/使能连续运行中变速（禁止保留）
+ <param name="Max_Vel"></param>运行速度的变速上限值，单位 pps
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadCurrentSpeed(System.Int16)">
+ <summary>
+ 读取当前速度值，单位 pps
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>指定轴的速度脉冲数
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ChangeSpeed(System.Int16,System.Double)">
+ <summary>
+ 在线改变指定轴的当前运动速度,且在调用前必须先调用 d2410_variety_speed_range 设置变速范围和使能。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Curr_Vel"></param>新的运行速度，单位 pps
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ResetTargetPos(System.Int16,System.Double)">
+ <summary>
+  在线改变目标位
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="NewPos">新目标位</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetVectorProfile(System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ 设定插补矢量运动曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetProfile(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ 设定梯形曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetSProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+ <summary>
+ 设定 S 形曲线运动的起始速度、运行速度、加速时间、S 段加减速脉冲数
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Sacc"></param>S 加速段脉冲数
+ <param name="Sdec"></param>S 减速段脉冲数
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetSTProfile(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ 设定 S 形曲线运动的起始速度、运行速度、总加速时间、S 段加减速时间
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ResetTargetPosition(System.Int16,System.Int32)">
+ <summary>
+ 在单轴绝对运动中改变目标位置。注意：该函数仅能在绝对位置模式下使用
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="Dist"></param>绝对位置值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.Line2(System.Int16,System.Int32,System.Int16,System.Int32,System.Int16)">
+ <summary>
+ 指定任意两轴以对称的梯形速度曲线做插补运动
+ </summary>
+ <param name="AXIS1"></param>指定两轴插补的第一轴
+ <param name="Dist1"></param>指定 axis1 的位移值，单位：脉冲数
+ <param name="AXIS2"></param>指定两轴插补的第二轴
+ <param name="Dist2"></param>指定 axis2 的位移值，单位：脉冲数
+ <param name="posi_mode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.Line3(System.Collections.ArrayList,System.Int32,System.Int32,System.Int32,System.Int16)">
+ <summary>
+ 指定任意三轴以对称的梯形速度曲线做插补运动
+ </summary>
+ <param name="axis"></param>轴号列表的指针
+ <param name="Dist1"></param>指定 axis[0]轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定 axis[1]轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定 axis[2]轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.Line4(System.Int16,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16)">
+ <summary>
+ 指定四轴以对称的梯形速度曲线做插补运动
+ </summary>
+ <param name="cardno"></param>指定插补运动的板卡号, 范围（0 － N - 1 ,N 为卡数）
+ <param name="Dist1"></param>指定第一轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定第二轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定第三轴的位移值，单位：脉冲数
+ <param name="Dist4"></param>指定第四轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+ <summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+ <param name="axis"></param>轴号列表指针
+ <param name="target_pos">目标位置列表（指定圆弧终点）</param> 
+ <param name="cen_pos">圆心绝对位置列表指针 </param>
+ <param name="arc_dir">圆弧方向：0 表示顺时针，1 表示逆时针</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.relArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+ <summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+ <param name="axis"></param>轴号列表指针
+ <param name="target_pos">目标位置列表（指定圆弧终点）</param> 
+ <param name="cen_pos">圆心绝对位置列表指针 </param>
+ <param name="arc_dir">圆弧方向：0 表示顺时针，1 表示逆时针</param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetHandwheelInmode(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置输入手轮脉冲信号的计数方式
+ </summary>
+ <param name="axis"></param>指定轴号
+ <param name="inmode"></param>表示输入方式：0－A、B 相位正交计数，1－双脉冲信号
+ <param name="count_dir"></param>计数器的计数方向及倍率设置：设置手轮的倍率, 正数表示默认方向, 负数表示与默认方向相反.
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.HandwheelMove(System.Int16,System.Double)">
+ <summary>
+ 启动指定轴的手轮脉冲运动
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="vh"></param>最大脉冲输入频率，单位 pps
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetEncoder(System.Int16)">
+ <summary>
+ 读取指定轴编码器反馈位置脉冲计数值
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>位置反馈脉冲值，单位：脉冲数
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetEncode(System.Int16,System.Int32)">
+ <summary>
+ 设置指定轴编码器反馈脉冲计数值，范围：28 位有符号数
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="encoder_value"></param>编码器的设定值。
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.CounterConfig(System.Int16,System.Int16)">
+ <summary>
+ 设置编码器的计数方式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="mode"></param>编码器的计数方式,0 非 A/B 相 (脉冲/方向)  1 1×A/B  2 2× A/B  3 4× A/B
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ConfigLTC(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴“锁存”信号的有效电平及其和工作方式。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="ltc_logic"></param>LTC 信号逻辑电平：0－低有效，1－高有效
+ <param name="ltc_mode"></param>保留
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetLatchValue(System.Int16)">
+ <summary>
+ 读取编码器锁存器的值
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>锁存器内的编码器脉冲数，单位：脉冲
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetLatchFlag(System.Int16)">
+ <summary>
+ 读取指定控制卡的锁存器的标志位
+ </summary>
+ <param name="axis"></param>指定控制卡号, 范围（0 － N - 1 ,N 为卡数）
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ResetLatchFlag(System.Int16)">
+ <summary>
+ 复位指定控制卡的锁存器的标志位
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetCounterFlag(System.Int16)">
+ <summary>
+ 读取指定控制卡的计数器的标识位
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ResetCounterFlag(System.Int16)">
+ <summary>
+ 复位计数器的计数标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ResetClearFlag(System.Int16)">
+ <summary>
+ 复位计数器的清零标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.Config_EZ(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴的 EZ 信号的有效电平及其作用
+ </summary>
+ <param name="axis"></param>指定轴号
+ <param name="ez_logic"></param>EZ 信号逻辑电平：0－低有效，1－高有效
+ <param name="ez_mode"></param>EZ 信号的工作方式：0－EZ 信号无效，1－EZ 是计数器复位信号
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ConfigLatchMode(System.Int16,System.Int16)">
+ <summary>
+ 设置锁存方式为单轴锁存或是四轴同时锁存
+ </summary>
+ <param name="cardno"></param>指定控制卡号
+ <param name="all_enable"></param>锁存方式 ：0－单独锁存， 1－四轴同时锁存
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.TrigerChunnel(System.Int16,System.Int16)">
+ <summary>
+ 选择全部锁存时的外触发信号通道；可以由二个信号通道输入， 即 LTC0,
+ </summary>
+ <param name="cardno"></param>卡号
+ <param name="num"></param>信号通道选择号 0：LTC0 锁存四个轴 1：LTC1 锁存四个轴
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetSpeakerLogic(System.Int16,System.Int16)">
+ <summary>
+ 选择编码器 Speaker 和 LED 的输出逻辑, 默认为低有效
+ </summary>
+ <param name="cardno"></param>卡号
+ <param name="logic"></param> 0：低有效， 1：高有效
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ConfigEMG(System.Int16,System.Int16,System.Int16)">
+ <summary>
+  EMG 信号设置，急停信号有效后会立即停止所有轴
+ </summary>
+ <param name="cardno"></param>卡号
+ <param name="enable"></param>0：无效; 1:有效
+ <param name="emg_logic"></param>0：:低有效; 1:高有效
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ConfigLTCFilter(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="cardno"></param>
+ <param name="width"></param>
+ <param name="enable"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ConfigEncoderFilter(System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="width"></param>
+ <param name="enable"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ReadCMP(System.Int16)">
+ <summary>
+ 读取指定轴的比较输出端口的电平
+ </summary>
+ <param name="axis">指定轴号</param>
+ <returns></returns>1－高电平；0－低电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.WriteCMP(System.Int16,System.Int16)">
+ <summary>
+ 设置指定轴的位置比较输出端口的电平
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="on_off"></param>on_off 1－高电平；0－低电平
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ConfigCMP(System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 配置位置比较输出端口的功能
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="cmp1_enable"></param>配置 CMP1(X 轴)、CMP2(Y 轴)、CMP3(Z 轴)、CMP4(A
+ <param name="cmp2_enable"></param>配置 CMP1’(X 轴)、CMP2’(Y 轴)、CMP3’(Z 轴)、
+ <param name="CMP_logic"></param>0－负逻辑；1－正逻辑
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ConfigComparator(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 配置指定轴 2 个比较器的触发条件。
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="cmp1_condition"></param>比较器 1 的触发条件
+ <param name="cmp2_condition"></param>比较器 2 的触发条件
+ <param name="source_sel"></param>配置计数器类型
+ <param name="SL_action"></param>保留
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetComparatorData(System.Int16,System.Int32,System.Int32)">
+ <summary>
+ 预置比较器数值
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="cmp1_data"></param>比较器 1 的值
+ <param name="cmp2_data"></param>比较器 2 的值
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.GetEquiv(System.Int16,System.Double@)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="equiv"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetEquiv(System.Int16,System.Double)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="new_equiv"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.ArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="target_pos"></param>
+ <param name="cen_pos"></param>
+ <param name="arc_dir"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.RelArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+ <summary>
+ 
+ </summary>
+ <param name="axis"></param>
+ <param name="rel_pos"></param>
+ <param name="rel_cen"></param>
+ <param name="arc_dir"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetTMoveAll(System.Int16,System.Int16@,System.Int32@,System.Int16)">
+ <summary>
+ 设置多轴同步运动的运动参数
+ </summary>
+ <param name="TotalAxes"></param>TotalAxes 同步运动轴的数量
+ <param name="pAxis"></param>轴号列表指针
+ <param name="pDist"></param>距离列表指针，单位：当量脉冲数
+ <param name="posi_mode"></param>位置模式：0 表示相对位置，1 表示绝对位置
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.StartMoveAll(System.Int16)">
+ <summary>
+ 按照预设运动参数，开始多轴同步运动
+ </summary>
+ <param name="FirstAxis"></param>FirstAxis 第一轴轴号
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetSyncOption(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 多轴同步选项的设置
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="sync_stop_on"></param>sync_stop_on 1 表示有 CSTP,轴停止；0 表示有 CSTP 时，轴不停
+ <param name="cstop_output_on"></param>cstop_output_on 1 表示当异常停止时，输出 CSTP；0 表示不输出
+ <param name="sync_option1"></param> 0 表示立即启动该功能；1 表示等待 CSTA 后启动该功能
+ <param name="sync_option2"></param>保留
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.SetSyncStopMode(System.Int16,System.Int16)">
+ <summary>
+ 设置同步停止的模式
+ </summary>
+ <param name="axis">指定轴号</param>
+ <param name="stop_mode"></param>stop_mode 停止模式：0 表示立即停止；1 表示减速停止
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member>
+<member name="M:TcpClient._601Base.BoardRest">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

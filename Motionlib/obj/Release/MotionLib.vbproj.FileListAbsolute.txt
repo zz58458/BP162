@@ -1,0 +1,429 @@
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\bin\Release\MotionLib.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\bin\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\bin\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\bin\Release\AppException.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\bin\Release\AppException.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\bin\Release\AppException.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\LQ.MotionLib.Run.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\MotionLib.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl000\MotionLib\obj\Release\MotionLib.pdb
+E:\MotionControl000\MotionLib\bin\Release\MotionLib.dll
+E:\MotionControl000\MotionLib\bin\Release\MotionLib.pdb
+E:\MotionControl000\MotionLib\bin\Release\MotionLib.xml
+E:\MotionControl000\MotionLib\bin\Release\AppException.dll
+E:\MotionControl000\MotionLib\bin\Release\AppException.pdb
+E:\MotionControl000\MotionLib\bin\Release\AppException.xml
+E:\MotionControl000\MotionLib\obj\Release\ResolveAssemblyReference.cache
+E:\MotionControl000\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+E:\MotionControl000\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+E:\MotionControl000\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+E:\MotionControl000\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+E:\MotionControl000\MotionLib\obj\Release\MotionLib.dll
+E:\MotionControl000\MotionLib\obj\Release\MotionLib.xml
+E:\MotionControl000\MotionLib\obj\Release\MotionLib.pdb
+F:\MotionControl12-18\MotionLib\bin\Release\MotionLib.pdb
+F:\MotionControl12-18\MotionLib\bin\Release\MotionLib.xml
+F:\MotionControl12-18\MotionLib\bin\Release\AppException.dll
+F:\MotionControl12-18\MotionLib\bin\Release\AppException.pdb
+F:\MotionControl12-18\MotionLib\bin\Release\AppException.xml
+F:\MotionControl12-18\MotionLib\obj\Release\ResolveAssemblyReference.cache
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.RunParam.resources
+F:\MotionControl12-18\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+F:\MotionControl12-18\MotionLib\obj\Release\MotionLib.xml
+F:\MotionControl12-18\MotionLib\obj\Release\MotionLib.pdb
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.frmReadErrorDialog.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.Main.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.MainFunc.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+F:\MotionControl12-18\MotionLib\bin\Release\MotionLib.exe
+F:\MotionControl12-18\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+F:\MotionControl12-18\MotionLib\obj\Release\MotionLib.exe
+F:\MotionControl01-14\MotionLib\bin\Release\MotionLib.exe
+F:\MotionControl01-14\MotionLib\bin\Release\MotionLib.pdb
+F:\MotionControl01-14\MotionLib\bin\Release\MotionLib.xml
+F:\MotionControl01-14\MotionLib\bin\Release\AppException.dll
+F:\MotionControl01-14\MotionLib\bin\Release\AppException.pdb
+F:\MotionControl01-14\MotionLib\bin\Release\AppException.xml
+F:\MotionControl01-14\MotionLib\obj\Release\ResolveAssemblyReference.cache
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.frmReadErrorDialog.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Main.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.MainFunc.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.RunParam.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+F:\MotionControl01-14\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+F:\MotionControl01-14\MotionLib\obj\Release\MotionLib.exe
+F:\MotionControl01-14\MotionLib\obj\Release\MotionLib.xml
+F:\MotionControl01-14\MotionLib\obj\Release\MotionLib.pdb
+F:\乐琪光电\MotionControl01-14\MotionLib\bin\Release\MotionLib.exe
+F:\乐琪光电\MotionControl01-14\MotionLib\bin\Release\MotionLib.pdb
+F:\乐琪光电\MotionControl01-14\MotionLib\bin\Release\MotionLib.xml
+F:\乐琪光电\MotionControl01-14\MotionLib\bin\Release\AppException.dll
+F:\乐琪光电\MotionControl01-14\MotionLib\bin\Release\AppException.pdb
+F:\乐琪光电\MotionControl01-14\MotionLib\bin\Release\AppException.xml
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\ResolveAssemblyReference.cache
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.frmReadErrorDialog.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Main.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.MainFunc.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.RunParam.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\MotionLib.exe
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\MotionLib.xml
+F:\乐琪光电\MotionControl01-14\MotionLib\obj\Release\MotionLib.pdb
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.AxisNameConfig.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+F:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+E:\MotionControl01-14\MotionLib\obj\Release\ResolveAssemblyReference.cache
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.frmReadErrorDialog.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Main.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.MainFunc.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.MainRun.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+E:\MotionControl01-14\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+E:\MotionControl01-14\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+E:\MotionControl01-24\MotionLib\bin\Release\MotionLib.exe.config
+E:\MotionControl01-24\MotionLib\bin\Release\MotionLib.exe
+E:\MotionControl01-24\MotionLib\bin\Release\MotionLib.pdb
+E:\MotionControl01-24\MotionLib\bin\Release\MotionLib.xml
+E:\MotionControl01-24\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl01-24\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl01-24\MotionLib\bin\Release\AppException.dll
+E:\MotionControl01-24\MotionLib\bin\Release\AppException.pdb
+E:\MotionControl01-24\MotionLib\bin\Release\AppException.xml
+E:\MotionControl01-24\MotionLib\obj\Release\ResolveAssemblyReference.cache
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.frmReadErrorDialog.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.Main.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.MainFunc.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.MainRun.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+E:\MotionControl01-24\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+E:\MotionControl01-24\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+E:\MotionControl01-24\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl01-24\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl01-24\MotionLib\obj\Release\MotionLib.exe
+E:\MotionControl01-24\MotionLib\obj\Release\MotionLib.xml
+E:\MotionControl01-24\MotionLib\obj\Release\MotionLib.pdb
+D:\MotionControl02-11\MotionLib\bin\Release\MotionLib.exe.config
+D:\MotionControl02-11\MotionLib\bin\Release\MotionLib.exe
+D:\MotionControl02-11\MotionLib\bin\Release\MotionLib.pdb
+D:\MotionControl02-11\MotionLib\bin\Release\MotionLib.xml
+D:\MotionControl02-11\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+D:\MotionControl02-11\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+D:\MotionControl02-11\MotionLib\bin\Release\AppException.dll
+D:\MotionControl02-11\MotionLib\bin\Release\AppException.pdb
+D:\MotionControl02-11\MotionLib\bin\Release\AppException.xml
+D:\MotionControl02-11\MotionLib\obj\Release\ResolveAssemblyReference.cache
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.frmReadErrorDialog.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.Main.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.MainFunc.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.MainRun.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+D:\MotionControl02-11\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+D:\MotionControl02-11\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+D:\MotionControl02-11\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+D:\MotionControl02-11\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+D:\MotionControl02-11\MotionLib\obj\Release\MotionLib.exe
+D:\MotionControl02-11\MotionLib\obj\Release\MotionLib.xml
+D:\MotionControl02-11\MotionLib\obj\Release\MotionLib.pdb
+E:\MotionControl02-19\MotionLib\bin\Release\MotionLib.exe.config
+E:\MotionControl02-19\MotionLib\bin\Release\MotionLib.exe
+E:\MotionControl02-19\MotionLib\bin\Release\MotionLib.pdb
+E:\MotionControl02-19\MotionLib\bin\Release\MotionLib.xml
+E:\MotionControl02-19\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl02-19\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl02-19\MotionLib\bin\Release\AppException.dll
+E:\MotionControl02-19\MotionLib\bin\Release\BaseStructure.dll
+E:\MotionControl02-19\MotionLib\bin\Release\LQSysImagelib.dll
+E:\MotionControl02-19\MotionLib\bin\Release\LQSysPicboxTool.dll
+E:\MotionControl02-19\MotionLib\bin\Release\TISCamera.dll
+E:\MotionControl02-19\MotionLib\bin\Release\TISCameralib.dll
+E:\MotionControl02-19\MotionLib\bin\Release\System.Printing.dll
+E:\MotionControl02-19\MotionLib\bin\Release\PresentationCore.dll
+E:\MotionControl02-19\MotionLib\bin\Release\TIS.Imaging.ICImagingControl32.dll
+E:\MotionControl02-19\MotionLib\bin\Release\halcondotnet.dll
+E:\MotionControl02-19\MotionLib\bin\Release\AppException.pdb
+E:\MotionControl02-19\MotionLib\bin\Release\AppException.xml
+E:\MotionControl02-19\MotionLib\bin\Release\zh-CHS\System.Printing.resources.dll
+E:\MotionControl02-19\MotionLib\bin\Release\zh-CHS\PresentationCore.resources.dll
+E:\MotionControl02-19\MotionLib\obj\Release\ResolveAssemblyReference.cache
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.Form1.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.frmReadErrorDialog.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.Main.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.MainFunc.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.MainRun.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+E:\MotionControl02-19\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+E:\MotionControl02-19\MotionLib\obj\Release\MotionLib.vbproj.GenerateResource.Cache
+E:\MotionControl02-19\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl02-19\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl02-19\MotionLib\obj\Release\MotionLib.exe
+E:\MotionControl02-19\MotionLib\obj\Release\MotionLib.xml
+E:\MotionControl02-19\MotionLib\obj\Release\MotionLib.pdb
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\MotionLib.exe.config
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\MotionLib.exe
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\MotionLib.pdb
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\MotionLib.xml
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\AppException.dll
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\AppException.pdb
+E:\WorkSpace\MotionControl04-16\MotionLib\bin\Release\AppException.xml
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\ResolveAssemblyReference.cache
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\Motionlib.vbproj.GenerateResource.Cache
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\MotionLib.exe
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\MotionLib.xml
+E:\WorkSpace\MotionControl04-16\MotionLib\obj\Release\MotionLib.pdb
+E:\MotionControl04-16\MotionLib\bin\Release\MotionLib.exe.config
+E:\MotionControl04-16\MotionLib\bin\Release\MotionLib.exe
+E:\MotionControl04-16\MotionLib\bin\Release\MotionLib.pdb
+E:\MotionControl04-16\MotionLib\bin\Release\MotionLib.xml
+E:\MotionControl04-16\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl04-16\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl04-16\MotionLib\bin\Release\AppException.dll
+E:\MotionControl04-16\MotionLib\bin\Release\AppException.pdb
+E:\MotionControl04-16\MotionLib\bin\Release\AppException.xml
+E:\MotionControl04-16\MotionLib\obj\Release\ResolveAssemblyReference.cache
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+E:\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+E:\MotionControl04-16\MotionLib\obj\Release\Motionlib.vbproj.GenerateResource.Cache
+E:\MotionControl04-16\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl04-16\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl04-16\MotionLib\obj\Release\MotionLib.exe
+E:\MotionControl04-16\MotionLib\obj\Release\MotionLib.xml
+E:\MotionControl04-16\MotionLib\obj\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\MotionLib.exe.config
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\AppException.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\AppException.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\bin\Release\AppException.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\Motionlib.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl04-16\MotionLib\obj\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\MotionLib.exe.config
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\AppException.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\AppException.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\bin\Release\AppException.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\Motionlib.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl04-23\MotionLib\obj\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\MotionLib.exe.config
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\AppException.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\AppException.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\bin\Release\AppException.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\Motionlib.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl05-05\MotionLib\obj\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\MotionLib.exe.config
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\MotionLib.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\AppException.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\AppException.pdb
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\bin\Release\AppException.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\Motionlib.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\MotionLib.exe
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\MotionLib.xml
+C:\Documents and Settings\Administrator\桌面\MotionControl05-16\MotionLib\obj\Release\MotionLib.pdb
+E:\MotionControl05-16\MotionLib\bin\Release\MotionLib.exe.config
+E:\MotionControl05-16\MotionLib\bin\Release\MotionLib.exe
+E:\MotionControl05-16\MotionLib\bin\Release\MotionLib.pdb
+E:\MotionControl05-16\MotionLib\bin\Release\MotionLib.xml
+E:\MotionControl05-16\MotionLib\bin\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl05-16\MotionLib\bin\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl05-16\MotionLib\bin\Release\AppException.dll
+E:\MotionControl05-16\MotionLib\bin\Release\AppException.pdb
+E:\MotionControl05-16\MotionLib\bin\Release\AppException.xml
+E:\MotionControl05-16\MotionLib\obj\Release\ResolveAssemblyReference.cache
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.AxisNoConfig.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.frmMotionBasicParams.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.GratingForm.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.IOForm.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.IOInputBox.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.Resources.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.OutIOButton.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.SpeedDealW.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.SpeedEdit2.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHS.resources
+E:\MotionControl05-16\MotionLib\obj\Release\LQ.MotionLib.Resources.zh-CHT.resources
+E:\MotionControl05-16\MotionLib\obj\Release\Motionlib.vbproj.GenerateResource.Cache
+E:\MotionControl05-16\MotionLib\obj\Release\zh-CHS\MotionLib.resources.dll
+E:\MotionControl05-16\MotionLib\obj\Release\zh-CHT\MotionLib.resources.dll
+E:\MotionControl05-16\MotionLib\obj\Release\MotionLib.exe
+E:\MotionControl05-16\MotionLib\obj\Release\MotionLib.xml
+E:\MotionControl05-16\MotionLib\obj\Release\MotionLib.pdb

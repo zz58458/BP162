@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA328F24-16FA-4230-A079-5C8F587186B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DSD.MotionLib</RootNamespace>
+    <AssemblyName>MotionLib</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <StartupObject>
+    </StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MotionLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MotionLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppException">
+      <HintPath>..\OutPut\AppException.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DSD" />
+    <Import Include="DSD.MotionLib" />
+    <Import Include="DSD.MotionLib.My" />
+    <Import Include="DSD.MotionLib.My.Resources" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2410Base.vb" />
+    <Compile Include="5400Base.vb" />
+    <Compile Include="absMotionHaw.vb" />
+    <Compile Include="absMtAxis.vb" />
+    <Compile Include="clsAxis.vb" />
+    <Compile Include="AxisNoConfig.designer.vb">
+      <DependentUpon>AxisNoConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AxisNoConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFunction.vb" />
+    <Compile Include="DMC601Mng.vb" />
+    <Compile Include="ClassIO.vb" />
+    <Compile Include="DMCCard.vb" />
+    <Compile Include="SetLanguage.vb" />
+    <Compile Include="GratingForm.Designer.vb">
+      <DependentUpon>GratingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GratingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IOForm.Designer.vb">
+      <DependentUpon>IOForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IOForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IOInputBox.designer.vb">
+      <DependentUpon>IOInputBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IOInputBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IORW.vb" />
+    <Compile Include="MdlFunction.vb" />
+    <Compile Include="frmMotionBasicParams.Designer.vb">
+      <DependentUpon>frmMotionBasicParams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMotionBasicParams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OutIOButton.Designer.vb">
+      <DependentUpon>OutIOButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutIOButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReadParam.vb" />
+    <Compile Include="Resources.zh-CHS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.zh-CHS.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.zh-CHT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.zh-CHT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SpeedEdit.Designer.vb">
+      <DependentUpon>SpeedEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpeedEdit2.Designer.vb">
+      <DependentUpon>SpeedEdit2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedEdit2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_5600Base.vb" />
+    <Compile Include="_5800Base.vb" />
+    <Compile Include="_601Base.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AxisNoConfig.en.resx">
+      <DependentUpon>AxisNoConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AxisNoConfig.resx">
+      <DependentUpon>AxisNoConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMotionBasicParams.en.resx">
+      <DependentUpon>frmMotionBasicParams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMotionBasicParams.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMotionBasicParams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GratingForm.en.resx">
+      <DependentUpon>GratingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GratingForm.resx">
+      <DependentUpon>GratingForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOForm.en.resx">
+      <DependentUpon>IOForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOForm.resx">
+      <DependentUpon>IOForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOInputBox.en.resx">
+      <DependentUpon>IOInputBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOInputBox.resx">
+      <DependentUpon>IOInputBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutIOButton.resx">
+      <DependentUpon>OutIOButton.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.en.resx" />
+    <EmbeddedResource Include="Resources.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-CHS.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-CHT.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-CHT.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpeedEdit.resx">
+      <DependentUpon>SpeedEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpeedEdit2.resx">
+      <DependentUpon>SpeedEdit2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenLight.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedLight.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\close lot.ico" />
+    <Content Include="Resources\Doctor.bmp" />
+    <Content Include="Resources\Doctor.ico" />
+    <None Include="app.config" />
+    <None Include="Resources\Exit.bmp" />
+    <None Include="Resources\d_zipdrive.gif" />
+    <Content Include="Resources\help.ico" />
+    <Content Include="Resources\history.ico" />
+    <None Include="Resources\history1.ico" />
+    <Content Include="Resources\Home.ico" />
+    <Content Include="Resources\jobs banner.bmp" />
+    <Content Include="Resources\Key.ico" />
+    <Content Include="Resources\Language.ico" />
+    <None Include="Resources\Language1.ico" />
+    <Content Include="Resources\location sel.ico" />
+    <Content Include="Resources\location.ico" />
+    <Content Include="Resources\Lock.ico" />
+    <None Include="Resources\Lock1.ico" />
+    <Content Include="Resources\Logo.bmp" />
+    <Content Include="Resources\Machine.ico" />
+    <Content Include="Resources\Machine.rc2" />
+    <Content Include="Resources\Maintenance.ico" />
+    <None Include="Resources\Maintenance1.ico" />
+    <Content Include="Resources\monitor.ico" />
+    <Content Include="Resources\motor sel.ico" />
+    <Content Include="Resources\motor.ico" />
+    <None Include="Resources\no1.gif" />
+    <Content Include="Resources\OFF.ico" />
+    <None Include="Resources\ok1.gif" />
+    <Content Include="Resources\ON.ico" />
+    <Content Include="Resources\open lot.ico" />
+    <Content Include="Resources\operation.ico" />
+    <Content Include="Resources\overview.ico" />
+    <Content Include="Resources\password.ico" />
+    <None Include="Resources\password1.ico" />
+    <Content Include="Resources\Power.ico" />
+    <Content Include="Resources\purge.ico" />
+    <Content Include="Resources\reset mc.ico" />
+    <None Include="Resources\reset mc1.ico" />
+    <Content Include="Resources\reset.ico" />
+    <Content Include="Resources\Run.ico" />
+    <None Include="Resources\Save.png" />
+    <Content Include="Resources\selected.ICO" />
+    <Content Include="Resources\settings.ico" />
+    <Content Include="Resources\start.ico" />
+    <Content Include="Resources\stop.ico" />
+    <Content Include="Resources\tool.ico" />
+    <Content Include="Resources\vision.ico" />
+    <None Include="Resources\wait1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

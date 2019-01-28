@@ -1,0 +1,3922 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MotionLib
+</name>
+</assembly>
+<members>
+<member name="M:LQ.MotionLib._2410Base.Close">
+	<summary>
+ 关闭控制卡，释放系统资源
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.PulseOutmode(System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的脉冲输出模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="outmode">脉冲输出方式选择</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SD(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置SD信号有效的逻辑电平及其工作方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">设置SD信号有效的逻辑电平及其工作方式</param>
+	<param name="sd_logic">设置SD信号的有效逻辑电平：0－低电平有效，1－高电平有效。</param>
+	<param name="sd_mode">设置SD信号的工作方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.PCS(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止PCS外部信号在运动中改变目标位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+	<param name="pcs_logic">设置PCS信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.INP(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止INP信号及其有效的逻辑电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+	<param name="inp_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ERC(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止ERC信号及其有效电平和输出方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">范围：0 - 3;</param>
+	<param name="erc_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<param name="erc_width">误差清除信号ERC有效输出宽度：</param>
+	<param name="erc_off_time">ERC信号的关断时间：</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ALM(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ALM的逻辑电平及其工作方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="alm_logic">ALM信号的输入电平：0－低电平有效，1－高电平有效</param>
+	<param name="alm_action">ALM信号的制动方式：0－立即停止，1－减速停止</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ELMODE(System.Int16,System.Int16)">
+	<summary>
+ 设置EL信号的有效电平及制动方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="el_mode">EL有效电平和制动方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetHome(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ORG信号的有效电平，以及允许/禁止滤波功能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="org_logic">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<param name="filter">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadSEVON(System.Int16)">
+	<summary>
+ 读取指定轴的“伺服使能”端子的电平状态
+ </summary>
+	<param name="axis"></param>
+	<returns>0－低电平，1－高电平。SEVON输出口初始状态可选。</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.writeSEVON(System.Int16,System.Int16)">
+	<summary>
+ 输出对指定轴的伺服使能端子的控制
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="on_off">设定管脚电平状态：0－低，1－高。SEVON输出口初始状态可选。</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.WriteERC(System.Int16,System.Int16)">
+	<summary>
+ 控制指定轴“误差清除”端子信号的输出
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="sel">0－复位ERC信号，1－输出ERC信号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadRDY(System.Int16)">
+	<summary>
+ 读取指定运动轴的“伺服准备好”端子的电平状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns>0－低电平，1－高电平</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadInbit(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输入点
+ </summary>
+	<param name="cardno">对应的卡号</param>
+	<param name="BitNo">对应的IO点号</param>
+	<returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.WriteOutbit(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 写入通用输出点
+ </summary>
+	<param name="cardno">对应的卡号</param>
+	<param name="BitNo">对应的IO点</param>
+	<param name="on_off">要写入ON  OFF  1为ON高电平 0为OFF低电平</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadOutbit(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输出点
+ </summary>
+	<param name="cardno">对应卡号</param>
+	<param name="BitNo">对应的IO点</param>
+	<returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadInport(System.Int16)">
+	<summary>
+ 读取卡所有通用输入口电平
+ </summary>
+	<param name="card">对应卡号</param>
+	<returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输入端口值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadOutport(System.Int16)">
+	<summary>
+ 读取指定控制卡的全部通用输出口的电平状态
+ </summary>
+	<param name="card">对应卡号</param>
+	<returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.WriteOutport(System.Int16,System.Int32)">
+	<summary>
+ 指定控制卡的全部通用输出口的电平状态
+ </summary>
+	<param name="cardno">对应卡号</param>
+	<param name="Port_Value"></param>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值。
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.HomeMode(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设定指定轴的回原点模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="mode">回原点的信号模式</param>
+	<param name="EZ_count"></param>遇到原点信号后，EZ 信号出现 EZ_count 指定的次数,仅当 mode=1 时该设置有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.HomeMove(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 单轴回原点运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="home_mode">回原点方式</param>
+	<param name="vel_mode"></param>回原点速度：0－低速回原点，1－高速回原点
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.DecelStop(System.Int16,System.Double)">
+	<summary>
+ 指定轴减速停止，调用此函数时立即减速，减速到起始速度后停止脉冲输出。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Tdec">减速时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ImdStop(System.Int16)">
+	<summary>
+ 使指定轴立即停止，没有任何减速的过程
+ </summary>
+	<param name="axis">指定轴号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.EmgStop">
+	<summary>
+ 使所有轴紧急停止
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SimultaneousStop(System.Int16)">
+	<summary>
+ 在指定轴的 CSTP 端子上输出一个单脉冲的停止信号,如果有多个轴的CSTP 信号相连接，则所有相连运动轴将同时停止运行。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetPosition(System.Int16)">
+	<summary>
+ 读取指定轴的指令脉冲位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回当前轴脉冲
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetPosition(System.Int16,System.Int32)">
+	<summary>
+ 设定指定轴的指令脉冲位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="current_position">需要给定轴当前脉冲</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetCheckDone(System.Int16)">
+	<summary>
+ 检测指定轴的运动状态，停止或是在运行中
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>0 表示指定轴正在运行，1 表示指定轴已停止
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetPrebuffStatus(System.Int16)">
+	<summary>
+ 读取指定轴的预置缓冲区的状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>0－缓冲区空，1－缓冲区满
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetIoStatus(System.Int16)">
+	<summary>
+ 读取指定轴有关运动信号的状态，包含指定轴的专用 I/O 状态。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回值去2进制后16位 每个位代表不同IO
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetAxisStatus(System.Int16)">
+	<summary>
+ 读取指定轴的主状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetRsts(System.Int16)">
+	<summary>
+ 读取指定轴的外部信号状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回8位  每一位不同含义
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.TPmove(System.Int16,System.UInt16,System.Int16)">
+	<summary>
+ 使指定轴以对称梯形速度曲线做定长位移运动。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ExTPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以非对称梯形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以对称 S 形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist">（绝对/相对）位移值，单位：脉冲数</param>
+	<param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ExSPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以非对称 S 形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SVmove(System.Int16,System.Int32)">
+	<summary>
+ 使指定轴以 S 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.TVmove(System.Int16,System.Int32)">
+	<summary>
+ 使指定轴以 T 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.VarietySpeed(System.Int16,System.Int16,System.Double)">
+	<summary>
+ 设定指定轴改变的速度上限，及变速使能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="chg_enable"></param>禁止/使能连续运行中变速（禁止保留）
+ <param name="Max_Vel"></param>运行速度的变速上限值，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadCurrentSpeed(System.Int16)">
+	<summary>
+ 读取当前速度值，单位 pps
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>指定轴的速度脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ChangeSpeed(System.Int16,System.Double)">
+	<summary>
+ 在线改变指定轴的当前运动速度,且在调用前必须先调用 d2410_variety_speed_range 设置变速范围和使能。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Curr_Vel"></param>新的运行速度，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetVectorProfile(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定插补矢量运动曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetProfile(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定梯形曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetSProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+	<summary>
+ 设定 S 形曲线运动的起始速度、运行速度、加速时间、S 段加减速脉冲数
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Sacc"></param>S 加速段脉冲数
+ <param name="Sdec"></param>S 减速段脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetSTProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定 S 形曲线运动的起始速度、运行速度、总加速时间、S 段加减速时间
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Tsacc"></param>S 加速段时间，其值小于 Tacc 的一半
+ <param name="Tsdec"></param>S 减速段时间，其值小于 Tdec 的一半
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ResetTargetPosition(System.Int16,System.Int32)">
+	<summary>
+ 在单轴绝对运动中改变目标位置。注意：该函数仅能在绝对位置模式下使用
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>绝对位置值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.Line2(System.Int16,System.Int32,System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 指定任意两轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="AXIS1"></param>指定两轴插补的第一轴
+ <param name="Dist1"></param>指定 axis1 的位移值，单位：脉冲数
+ <param name="AXIS2"></param>指定两轴插补的第二轴
+ <param name="Dist2"></param>指定 axis2 的位移值，单位：脉冲数
+ <param name="posi_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.Line3(System.Collections.ArrayList,System.Int32,System.Int32,System.Int32,System.Int16)">
+	<summary>
+ 指定任意三轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="axis"></param>轴号列表的指针
+ <param name="Dist1"></param>指定 axis[0]轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定 axis[1]轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定 axis[2]轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.Line4(System.Int16,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16)">
+	<summary>
+ 指定四轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="cardno"></param>指定插补运动的板卡号, 范围（0 － N - 1 ,N 为卡数）
+ <param name="Dist1"></param>指定第一轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定第二轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定第三轴的位移值，单位：脉冲数
+ <param name="Dist4"></param>指定第四轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+	<param name="axis"></param>轴号列表指针
+ <param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心绝对位置列表指针 </param>
+	<param name="arc_dir">圆弧方向：0 表示顺时针，1 表示逆时针</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.relArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+	<param name="axis"></param>轴号列表指针
+ <param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心绝对位置列表指针 </param>
+	<param name="arc_dir">圆弧方向：0 表示顺时针，1 表示逆时针</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetHandwheelInmode(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置输入手轮脉冲信号的计数方式
+ </summary>
+	<param name="axis"></param>指定轴号
+ <param name="inmode"></param>表示输入方式：0－A、B 相位正交计数，1－双脉冲信号
+ <param name="count_dir"></param>计数器的计数方向及倍率设置：设置手轮的倍率, 正数表示默认方向, 负数表示与默认方向相反.
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.HandwheelMove(System.Int16,System.Double)">
+	<summary>
+ 启动指定轴的手轮脉冲运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="vh"></param>最大脉冲输入频率，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetEncoder(System.Int16)">
+	<summary>
+ 读取指定轴编码器反馈位置脉冲计数值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>位置反馈脉冲值，单位：脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetEncode(System.Int16,System.Int32)">
+	<summary>
+ 设置指定轴编码器反馈脉冲计数值，范围：28 位有符号数
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="encoder_value"></param>编码器的设定值。
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.CounterConfig(System.Int16,System.Int16)">
+	<summary>
+ 设置编码器的计数方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="mode"></param>编码器的计数方式,0 非 A/B 相 (脉冲/方向)  1 1×A/B  2 2× A/B  3 4× A/B
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ConfigLTC(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴“锁存”信号的有效电平及其和工作方式。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="ltc_logic"></param>LTC 信号逻辑电平：0－低有效，1－高有效
+ <param name="ltc_mode"></param>保留
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetLatchValue(System.Int16)">
+	<summary>
+ 读取编码器锁存器的值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>锁存器内的编码器脉冲数，单位：脉冲
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetLatchFlag(System.Int16)">
+	<summary>
+ 读取指定控制卡的锁存器的标志位
+ </summary>
+	<param name="axis"></param>指定控制卡号, 范围（0 － N - 1 ,N 为卡数）
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ResetLatchFlag(System.Int16)">
+	<summary>
+ 复位指定控制卡的锁存器的标志位
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetCounterFlag(System.Int16)">
+	<summary>
+ 读取指定控制卡的计数器的标识位
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ResetCounterFlag(System.Int16)">
+	<summary>
+ 复位计数器的计数标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ResetClearFlag(System.Int16)">
+	<summary>
+ 复位计数器的清零标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.Config_EZ(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的 EZ 信号的有效电平及其作用
+ </summary>
+	<param name="axis"></param>指定轴号
+ <param name="ez_logic"></param>EZ 信号逻辑电平：0－低有效，1－高有效
+ <param name="ez_mode"></param>EZ 信号的工作方式：0－EZ 信号无效，1－EZ 是计数器复位信号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ConfigLatchMode(System.Int16,System.Int16)">
+	<summary>
+ 设置锁存方式为单轴锁存或是四轴同时锁存
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <param name="all_enable"></param>锁存方式 ：0－单独锁存， 1－四轴同时锁存
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.TrigerChunnel(System.Int16,System.Int16)">
+	<summary>
+ 选择全部锁存时的外触发信号通道；可以由二个信号通道输入， 即 LTC0,
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="num"></param>信号通道选择号 0：LTC0 锁存四个轴 1：LTC1 锁存四个轴
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetSpeakerLogic(System.Int16,System.Int16)">
+	<summary>
+ 选择编码器 Speaker 和 LED 的输出逻辑, 默认为低有效
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="logic"></param> 0：低有效， 1：高有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ConfigEMG(System.Int16,System.Int16,System.Int16)">
+	<summary>
+  EMG 信号设置，急停信号有效后会立即停止所有轴
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="enable"></param>0：无效; 1:有效
+ <param name="emg_logic"></param>0：:低有效; 1:高有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ConfigLTCFilter(System.Int16,System.Int16,System.Int16)">
+	<summary>
+	</summary>
+	<param name="cardno"></param>
+	<param name="width"></param>
+	<param name="enable"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ConfigEncoderFilter(System.Int16,System.Int16,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="width"></param>
+	<param name="enable"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ReadCMP(System.Int16)">
+	<summary>
+ 读取指定轴的比较输出端口的电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>1－高电平；0－低电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.WriteCMP(System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的位置比较输出端口的电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="on_off"></param>on_off 1－高电平；0－低电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ConfigCMP(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 配置位置比较输出端口的功能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_enable"></param>配置 CMP1(X 轴)、CMP2(Y 轴)、CMP3(Z 轴)、CMP4(A
+ <param name="cmp2_enable"></param>配置 CMP1’(X 轴)、CMP2’(Y 轴)、CMP3’(Z 轴)、
+ <param name="CMP_logic"></param>0－负逻辑；1－正逻辑
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ConfigComparator(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 配置指定轴 2 个比较器的触发条件。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_condition"></param>比较器 1 的触发条件
+ <param name="cmp2_condition"></param>比较器 2 的触发条件
+ <param name="source_sel"></param>配置计数器类型
+ <param name="SL_action"></param>保留
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetComparatorData(System.Int16,System.Int32,System.Int32)">
+	<summary>
+ 预置比较器数值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_data"></param>比较器 1 的值
+ <param name="cmp2_data"></param>比较器 2 的值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.GetEquiv(System.Int16,System.Double@)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="equiv"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetEquiv(System.Int16,System.Double)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="new_equiv"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.ArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="target_pos"></param>
+	<param name="cen_pos"></param>
+	<param name="arc_dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.RelArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="rel_pos"></param>
+	<param name="rel_cen"></param>
+	<param name="arc_dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetTMoveAll(System.Int16,System.Int16@,System.Int32@,System.Int16)">
+	<summary>
+ 设置多轴同步运动的运动参数
+ </summary>
+	<param name="TotalAxes"></param>TotalAxes 同步运动轴的数量
+ <param name="pAxis"></param>轴号列表指针
+ <param name="pDist"></param>距离列表指针，单位：当量脉冲数
+ <param name="posi_mode"></param>位置模式：0 表示相对位置，1 表示绝对位置
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.StartMoveAll(System.Int16)">
+	<summary>
+ 按照预设运动参数，开始多轴同步运动
+ </summary>
+	<param name="FirstAxis"></param>FirstAxis 第一轴轴号
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetSyncOption(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 多轴同步选项的设置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="sync_stop_on"></param>sync_stop_on 1 表示有 CSTP,轴停止；0 表示有 CSTP 时，轴不停
+ <param name="cstop_output_on"></param>cstop_output_on 1 表示当异常停止时，输出 CSTP；0 表示不输出
+ <param name="sync_option1"></param> 0 表示立即启动该功能；1 表示等待 CSTA 后启动该功能
+ <param name="sync_option2"></param>保留
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.SetSyncStopMode(System.Int16,System.Int16)">
+	<summary>
+ 设置同步停止的模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="stop_mode"></param>stop_mode 停止模式：0 表示立即停止；1 表示减速停止
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._2410Base.BoardRest">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.#ctor(LQ.MotionLib.absMotionHaw.MotionHawParam,System.Byte,System.String)">
+	<summary>
+ 卡构造函数
+ </summary>
+	<param name="Params">卡参数(各轴的基本参数)</param>
+	<param name="AxisNum">轴数</param>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.DMCCard._GritMode">
+	<summary>
+ 光栅对应的处理方法
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.Query(System.String)">
+	<summary>
+ 查询某个轴的光栅安全门配置
+ </summary>
+	<param name="AxisName">轴</param>
+	<returns>该轴的配置节点</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SetGrat(System.String,System.Collections.ArrayList)">
+	<summary>
+ 设置轴对应光栅或安全门的配置
+ </summary>
+	<param name="AxisName">要重设的轴</param>
+	<returns>配置失败返回False</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.AxisMoreNode">
+	<summary>
+ 轴对应的多个光栅处理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.InfromGrat(System.Byte)">
+	<summary>
+ 通知光栅离开
+ </summary>
+	<param name="Mode">处理模式，0（不理）或1（恢复、继续）</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.GetGraErrorMode">
+	<summary>
+ 读取光栅错误最高等级处理模式
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.GetAxisError(System.Byte)">
+	<summary>
+ 单轴错误信息
+ </summary>
+	<param name="AxisNum">轴号</param>
+	<returns></returns>
+	<remarks>单轴错误报警</remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.AxisIsArrived(System.String)">
+	<summary>
+ 判断运动是否到位
+ </summary>
+	<param name="AxisNum"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.InspErr">
+	<summary>
+ 所有轴的错误报警
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.InspAxisError(System.String)">
+	<summary>
+ 单轴异常检测
+ </summary>
+	<param name="AxisName">轴</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.GetAxisError(System.String)">
+	<summary>
+ 单轴错误信息
+ </summary>
+	<param name="AxisNum">轴名称</param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.GetAxis(System.Int16)">
+	<summary>
+ 获取某个轴
+ </summary>
+	<param name="AxisNum">轴号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LQ.MotionLib.DMCCard.GetAxisRunStat(System.String)">
+	<summary>
+ 获取单轴状态结构
+ </summary>
+	<param name="AxisNum"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LQ.MotionLib.DMCCard.Axis">
+	<summary>
+ 获取卡中所有轴
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.CleanError">
+	<summary>
+ 清除所有报警
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.EmgStop">
+	<summary>
+ 紧急停止所有轴
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.InitHaw">
+	<summary>
+ 初始化卡
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.OrgAllAxis">
+	<summary>
+ 所有轴初始化回原点
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.ReSetBaseParam(LQ.MotionLib.absMotionHaw.MotionHawParam)">
+	<summary>
+ 重设所有信号有效电平
+ </summary>
+	<param name="Params"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.ReadIOInChge(System.String,System.String,System.Int16)">
+	<summary>
+ 读取某个InIO某个状态是否超时
+ </summary>
+	<param name="name"></param>
+	<param name="FlaN"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.ReadIOOutChge(System.String,System.String,System.Int16)">
+	<summary>
+ 读取某个OutIO某个状态是否超时
+ </summary>
+	<param name="name"></param>
+	<param name="FlaN"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.WriteDM(System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ 写入数据至硬件数据存储区
+ </summary>
+	<param name="strUnitNum">单元号码或硬件号码</param>
+	<param name="strHeadCode">模式代码(读，写等)</param>
+	<param name="intAddress">储存地址</param>
+	<param name="intData">储存内容</param>
+	<param name="timeDelay">延时时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.Line2(System.Int16,System.Int64,System.Int16,System.Int64,System.Int16)">
+	<summary>
+ 2轴直线插补
+ </summary>
+	<param name="Axis1">轴1</param>
+	<param name="Dist1">轴1距离</param>
+	<param name="Axis2">轴2</param>
+	<param name="Dist2">轴2距离</param>
+	<param name="Posi_mode">0－相对位移，1－绝对位移</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.Line3(System.Collections.ArrayList,System.Int64,System.Int64,System.Int64,System.Int16)">
+	<summary>
+ 3轴直线插补
+ </summary>
+	<param name="Axis">轴列表</param>
+	<param name="Dist1">轴1距离</param>
+	<param name="Dist2">轴2距离</param>
+	<param name="Dist3">轴3距离</param>
+	<param name="Posi_mode">0－相对位移，1－绝对位移</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.Line4(System.Int16,System.Int64,System.Int64,System.Int64,System.Int64,System.Int16)">
+	<summary>
+ 4轴直线插补
+ </summary>
+	<param name="card">指定插补运动的板卡号, 范围（0 － N - 1 ,N为卡数）</param>
+	<param name="Dist1">指定插补第一轴的位移值，单位：脉冲数</param>
+	<param name="Dist2">指定插补第二轴的位移值，单位：脉冲数</param>
+	<param name="Dist3">指定插补第三轴的位移值，单位：脉冲数</param>
+	<param name="Dist4">指定插补第四轴的位移值，单位：脉冲数</param>
+	<param name="Posi_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.FACLine2(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 二轴相对位置插补，圆弧插补
+ </summary>
+	<param name="Axis">轴号列表</param>
+	<param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心位置列表</param>
+	<param name="arc_dir">圆弧方向，0－顺时针,1－逆时针</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.ABSLine2(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 二轴绝对位置插补，圆弧插补
+ </summary>
+	<param name="Axis">轴号列表</param>
+	<param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心位置列表</param>
+	<param name="arc_dir">圆弧方向，0－顺时针,1－逆时针</param>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.DMCCard.Inset">
+	<summary>
+ 插补矢量运动曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SetPosition(System.String,System.Int32)">
+	<summary>
+ 设置该轴脉冲
+ </summary>
+	<param name="AxisName">轴名称</param>
+	<param name="Inval">脉冲数</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SevOnOff">
+	<summary>
+ 所有轴上电
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.Pow(System.String)">
+	<summary>
+ 单轴上电
+ </summary>
+	<param name="AxisName"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.DownPow(System.String)">
+	<summary>
+ 单轴下电
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SevonDown">
+	<summary>
+ 全部下电
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.MoveFAC(System.String,System.String,System.Boolean)">
+	<summary>
+ 单轴相对运动
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="PosionName">位置名称</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.MoveABS(System.String,System.String,System.Boolean)">
+	<summary>
+ 单轴绝对运动
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="PosionName">位置名称</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.ResetParam(System.String,LQ.MotionLib.absMtAxis._RunParam)">
+	<summary>
+ 重设轴基本参数
+ </summary>
+	<param name="AxisName">轴名称</param>
+	<param name="RunP">轴运动参数</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.StopRun(System.String,System.Boolean)">
+	<summary>
+ 单轴停止
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.AllStop">
+	<summary>
+ 所有轴急停
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.AllDelStop">
+	<summary>
+ 所有轴减速停
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.MoveKeep(System.String,System.Byte,System.Boolean)">
+	<summary>
+ 单轴持续运动
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.GoHome(System.String,System.Boolean)">
+	<summary>
+ 单轴回原点
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.ChangeSpeed(System.String,System.Single,System.Boolean)">
+	<summary>
+ 单轴变速
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.DelSpeedStop(System.String,System.Boolean)">
+	<summary>
+ 减速停止
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.Paused(System.String,System.Byte,System.Boolean)">
+	<summary>
+ 单轴暂停
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="Pmode">暂停模式（0—&gt;减速停止，1—&gt;减速停止直到运动完成）</param>
+	<param name="WaitOver">超时是否等待</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.Started(System.String,System.Boolean)">
+	<summary>
+ 单轴开始
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.StarGra(System.String,LQ.MotionLib.clsAxis.gratingMode)">
+	<summary>
+ 光栅处理
+ </summary>
+	<param name="AxisName">轴</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.gratings(System.String,System.Boolean)">
+	<summary>
+ 光栅离开
+ </summary>
+	<param name="AxisName">轴</param>
+	<param name="WaitOver">超时是否报警</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.GetPos(System.String)">
+	<summary>
+ 获取轴当前位置
+ </summary>
+	<param name="AxisName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.GetSpeed(System.String)">
+	<summary>
+ 获取单轴当前速度
+ </summary>
+	<param name="AxisName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.IsThere(System.String,System.String)">
+	<summary>
+ 判断该轴是否在某个位置
+ </summary>
+	<param name="AxisName"></param>
+	<param name="PositionName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.ReSetBaseParam(LQ.MotionLib.absMtAxis.AxisParam)">
+	<summary>
+ 重设所有信号有效电平
+ </summary>
+	<param name="Param"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.MoveNoSpaceAbs(System.String,System.String,System.Single,System.Boolean)">
+	<summary>
+ 无反相间隙的绝对运动
+ </summary>
+	<param name="AxisName">轴名称</param>
+	<param name="PosionName">目标位置名称</param>
+	<param name="OffDis">间隙补偿</param>
+	<param name="WaitOver"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.LodeParam(System.String,System.String)">
+	<summary>
+ 设置运动参数
+ </summary>
+	<param name="AxisName">轴名称</param>
+	<param name="SpeedName">速度名称</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SetName(System.Collections.ArrayList@,System.Collections.ArrayList@,System.Collections.ArrayList@)">
+	<summary>
+ 设置轴运动位置、速度
+ </summary>
+	<param name="NameList">轴数组</param>
+	<param name="PositionName">位置数组</param>
+	<param name="SpeedName">速度数组</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SetAllAxisName(System.Collections.ArrayList@)">
+	<summary>
+ 设置所有轴名称
+ </summary>
+	<param name="NameList">轴名称关系数组</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SetAllAxisPosition(System.Collections.ArrayList@)">
+	<summary>
+ 设置所有轴位置名称
+ </summary>
+	<param name="PositionName">该轴所有位置关系数组</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.SetAllAxisSpeed(System.Collections.ArrayList@)">
+	<summary>
+ 设置所有轴速度名称
+ </summary>
+	<param name="SpeedName">轴速度关系数组</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.AxisNameTransNum(System.String)">
+	<summary>
+ 轴名称转轴号
+ </summary>
+	<param name="AxisName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.AxisNumTransName(System.Int16)">
+	<summary>
+ 轴号称转轴名称
+ </summary>
+	<param name="AxisNum"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.NameTranPos(System.String,System.Boolean@)">
+	<summary>
+ 位置名称转换为具体位置
+ </summary>
+	<param name="Name"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.DMCCard.NameTranDispos(System.String)">
+	<summary>
+ 位置名称转换为具体位置
+ </summary>
+	<param name="Name"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存 ResourceManager 实例。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.Culture">
+	<summary>
+  为使用此强类型资源类的所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ALM制动方式">
+	<summary>
+  查找类似 ALMStopMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ALM有效电平">
+	<summary>
+  查找类似 ALMValidSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.EL设置">
+	<summary>
+  查找类似 SetEL 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.EMG信号使能">
+	<summary>
+  查找类似 EMGSignalEnable 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.EMG有效电平">
+	<summary>
+  查找类似 EMGValidSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ERC信号">
+	<summary>
+  查找类似 ERCSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ERC信号使能">
+	<summary>
+  查找类似 ERCSignalEnable 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ERC关断时间">
+	<summary>
+  查找类似 ERCShutTime 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ERC有效宽度">
+	<summary>
+  查找类似 ERCValidWidth 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.ERC有效电平">
+	<summary>
+  查找类似 ERCValidSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.INP信号使能">
+	<summary>
+  查找类似 INPSignalEnable 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.INP有效电平">
+	<summary>
+  查找类似 INPValidSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.PCS允许或禁止">
+	<summary>
+  查找类似 PCSAllowOrForbid 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.PCS有效电平">
+	<summary>
+  查找类似 PCSValidSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.SD允许或禁止">
+	<summary>
+  查找类似 SDAllowOrForbid 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.SD工作模式">
+	<summary>
+  查找类似 SDWorkMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.SD有效电平">
+	<summary>
+  查找类似 SDValidSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.SEVON电平">
+	<summary>
+  查找类似 SEVONSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.Stop模式">
+	<summary>
+  查找类似 StopMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.String1">
+	<summary>
+  查找类似  的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.S型">
+	<summary>
+  查找类似 SMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.T型">
+	<summary>
+  查找类似 TMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.上电">
+	<summary>
+  查找类似 POW 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.不存在此轴参数">
+	<summary>
+  查找类似 不存在此轴参数 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.不理">
+	<summary>
+  查找类似 不理 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.传动比">
+	<summary>
+  查找类似 RunScale 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.伺服RAY电平">
+	<summary>
+  查找类似 SEVONRAYSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.伺服报警">
+	<summary>
+  查找类似 伺服报警 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.位置">
+	<summary>
+  查找类似 Position 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.位置编辑">
+	<summary>
+  查找类似 EditedPosition 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.低电平">
+	<summary>
+  查找类似 LowSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.低速">
+	<summary>
+  查找类似 LowSpeed 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.使用IO点">
+	<summary>
+  查找类似 UseIOPoint 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.保存">
+	<summary>
+  查找类似 SAVE 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.保存参数">
+	<summary>
+  查找类似 SaveParams 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.保存配置">
+	<summary>
+  查找类似 SaveConfig 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.停止">
+	<summary>
+  查找类似 Stop 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.停止运动">
+	<summary>
+  查找类似 停止运动 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.允许">
+	<summary>
+  查找类似 Allow 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.光栅异物移除">
+	<summary>
+  查找类似 光栅异物移除 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.光栅报警">
+	<summary>
+  查找类似 光栅报警 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.减速">
+	<summary>
+  查找类似 减速 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.减速停">
+	<summary>
+  查找类似 减速停 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.减速停止">
+	<summary>
+  查找类似 减速停止 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.减速时间">
+	<summary>
+  查找类似 SpeedDownTime： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.减速比">
+	<summary>
+  查找类似 SpeedDownRatio： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.减速脉冲">
+	<summary>
+  查找类似 SpeedDownPulse： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.初始化失败">
+	<summary>
+  查找类似 初始化失败 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.删除">
+	<summary>
+  查找类似 Delete 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.删除位置">
+	<summary>
+  查找类似 DeletePosition 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.删除轴名称">
+	<summary>
+  查找类似 DeleteAxisName 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.删除选中速度">
+	<summary>
+  查找类似 DeleteSelectSpeed 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.删除配置结果">
+	<summary>
+  查找类似 DeleteAxisConfig 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.到位">
+	<summary>
+  查找类似 Arrived 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.到位信号发送">
+	<summary>
+  查找类似 到位信号发送 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.加速时间">
+	<summary>
+  查找类似 SpeedUpTime： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.加速脉冲">
+	<summary>
+  查找类似 SpeedUpPulse： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.卡号">
+	<summary>
+  查找类似 CardNo 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.卡号选择">
+	<summary>
+  查找类似 ChooseCardNo 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.卡数量">
+	<summary>
+  查找类似 CardNo 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.卡类型">
+	<summary>
+  查找类似 CardType 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.原点有效电平">
+	<summary>
+  查找类似 HomeValidSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.原点滤波使能">
+	<summary>
+  查找类似 HomeFilterEnable 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.原点设置">
+	<summary>
+  查找类似 SetHome 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.参数">
+	<summary>
+  查找类似 参数 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.参数导入">
+	<summary>
+  查找类似 ImportParams 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.参数文件不正确">
+	<summary>
+  查找类似 参数文件不正确 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.参数设置">
+	<summary>
+  查找类似 SetParams 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.反向">
+	<summary>
+  查找类似 RebellionDirection 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.取消">
+	<summary>
+  查找类似 Cancel 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.变速">
+	<summary>
+  查找类似 变速 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.可用输入">
+	<summary>
+  查找类似 UsableInput 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.可用输出">
+	<summary>
+  查找类似 UsableOutPut 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.名称">
+	<summary>
+  查找类似 Name 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.后台繁忙">
+	<summary>
+  查找类似 后台繁忙 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.启动速度">
+	<summary>
+  查找类似 StartSpeed： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.回原点">
+	<summary>
+  查找类似 回原点 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.回原点EZ个数">
+	<summary>
+  查找类似 BackHomeEZCount 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.回原点方向">
+	<summary>
+  查找类似 BackHomeDirection 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.回原点模式">
+	<summary>
+  查找类似 BackHomeMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.回原点速度模式">
+	<summary>
+  查找类似 BackHomeSpeedMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.型号">
+	<summary>
+  查找类似 Version 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.复位">
+	<summary>
+  查找类似 BackHome 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.复位速度">
+	<summary>
+  查找类似 ReplaceSpeed： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.对应关系">
+	<summary>
+  查找类似 Relationship 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.开始">
+	<summary>
+  查找类似 开始 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.张">
+	<summary>
+  查找类似 Tense 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.当前值">
+	<summary>
+  查找类似 当前值 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.当前状态">
+	<summary>
+  查找类似 CurrentStatus 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.急停报警">
+	<summary>
+  查找类似 急停报警 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.报警">
+	<summary>
+  查找类似 Warn 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.持续运动">
+	<summary>
+  查找类似 持续运动 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.指令发送失败">
+	<summary>
+  查找类似 指令发送失败 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.指令发送成功">
+	<summary>
+  查找类似 指令发送成功 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.改变选中速度">
+	<summary>
+  查找类似 ChangeSelectSpeed 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.无效">
+	<summary>
+  查找类似 Invalid 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.无需添加">
+	<summary>
+  查找类似 无需添加 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.暂停">
+	<summary>
+  查找类似 暂停 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.最大速度">
+	<summary>
+  查找类似 MaxSpeed： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.有效">
+	<summary>
+  查找类似 Valid 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.未找到轴配置文件">
+	<summary>
+  查找类似 未找到轴配置文件 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.正向">
+	<summary>
+  查找类似 StraightDirection 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.正方向">
+	<summary>
+  查找类似 Front 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.正极限">
+	<summary>
+  查找类似 RightLimited 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.正极限报警">
+	<summary>
+  查找类似 RightLimitedWarn 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.此位置已经有">
+	<summary>
+  查找类似 此位置已经有 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.测试">
+	<summary>
+  查找类似 Test 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加">
+	<summary>
+  查找类似 Add 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加位置">
+	<summary>
+  查找类似 ADDPosition 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加卡">
+	<summary>
+  查找类似 AddCard 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加输入">
+	<summary>
+  查找类似 AddInput 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加输出">
+	<summary>
+  查找类似 AddOutPut 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加速度">
+	<summary>
+  查找类似 AddSpeed 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加项目">
+	<summary>
+  查找类似 AddProject 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加项目名称">
+	<summary>
+  查找类似 AddProjectName 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加项目状态A">
+	<summary>
+  查找类似 AddProjectStatusA 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.添加项目状态B">
+	<summary>
+  查找类似 AddProjectStatusB 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.点动移动模式">
+	<summary>
+  查找类似 PointRunMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.状态">
+	<summary>
+  查找类似 Status 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.目标位置">
+	<summary>
+  查找类似 目标位置： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.直运模式">
+	<summary>
+  查找类似 AlwaysRunMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.相对运动">
+	<summary>
+  查找类似 相对运动 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.相对运动模式">
+	<summary>
+  查找类似 RelativeRunMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.确定">
+	<summary>
+  查找类似 Ensure 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.碰到光栅">
+	<summary>
+  查找类似 碰到光栅 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.禁止">
+	<summary>
+  查找类似 Foebid 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.离开原点方向">
+	<summary>
+  查找类似 LeaveHomeDirection 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.移动">
+	<summary>
+  查找类似 MOVE 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.立即停止">
+	<summary>
+  查找类似 PromptlyStop 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.等待用户指令">
+	<summary>
+  查找类似 等待用户指令 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.类型">
+	<summary>
+  查找类似 Type 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.类型选择">
+	<summary>
+  查找类似 ChooseType 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.给出状态格式不正确">
+	<summary>
+  查找类似 给出状态格式不正确 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.绝对运动">
+	<summary>
+  查找类似 绝对运动 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.编码计数模式">
+	<summary>
+  查找类似 CodeCountMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.脉冲">
+	<summary>
+  查找类似 Pulse 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.脉冲模式">
+	<summary>
+  查找类似 PulseMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.请检查位置名">
+	<summary>
+  查找类似 请检查位置名 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.请检查文件是否缺失">
+	<summary>
+  查找类似 请检查文件是否缺失 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.请输入要添加的位置">
+	<summary>
+  查找类似 请输入要添加的位置 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.读取参数">
+	<summary>
+  查找类似 ReadParams 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.读取当前脉冲">
+	<summary>
+  查找类似 读取当前脉冲 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.负向">
+	<summary>
+  查找类似 负向 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.负方向">
+	<summary>
+  查找类似 Back 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.负极限">
+	<summary>
+  查找类似 LeftLImited 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.负极限报警">
+	<summary>
+  查找类似 LeftLImitedWarn 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.超时报警">
+	<summary>
+  查找类似 超时报警 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.软件极限使能">
+	<summary>
+  查找类似 SoftWareLimitEnable 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.轴">
+	<summary>
+  查找类似 Axis 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.轴初始化失败">
+	<summary>
+  查找类似 AxisInitialise 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.轴号">
+	<summary>
+  查找类似 AxisNo 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.轴名称">
+	<summary>
+  查找类似 AxisName 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.输入操作">
+	<summary>
+  查找类似 InputOperate 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.输出操作">
+	<summary>
+  查找类似 OutputOperate 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.输出类型">
+	<summary>
+  查找类似 OutputType 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.运动">
+	<summary>
+  查找类似 Run 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.运动到位">
+	<summary>
+  查找类似 运动到位 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.运动异常">
+	<summary>
+  查找类似 运动异常 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.运动超时">
+	<summary>
+  查找类似 RunTimeOut 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.运动距离">
+	<summary>
+  查找类似 运动距离 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.运动轴选择">
+	<summary>
+  查找类似 ChooseAxis 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.退出">
+	<summary>
+  查找类似 Quit 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.速度">
+	<summary>
+  查找类似 速度 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.速度名称">
+	<summary>
+  查找类似 SpeedName： 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.速度曲线模式">
+	<summary>
+  查找类似 SpeedBightMode 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.速度类型">
+	<summary>
+  查找类似 SpeedType 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.速度编辑">
+	<summary>
+  查找类似 EditSpeed 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.速度设置">
+	<summary>
+  查找类似 SpeedSetup 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.速度选择">
+	<summary>
+  查找类似 ChooseSpeed 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.非AB">
+	<summary>
+  查找类似 NotAB 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.马上停">
+	<summary>
+  查找类似 马上停 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.驱动参数设置">
+	<summary>
+  查找类似 SetDriveParams 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.高电平">
+	<summary>
+  查找类似 HightSignal 的本地化字符串。
+</summary>
+</member><member name="P:LQ.MotionLib.My.Resources.Resources.高速">
+	<summary>
+  查找类似 HightSpeed 的本地化字符串。
+</summary>
+</member><member name="T:LQ.MotionLib.My.Resources.Resources">
+	<summary>
+  强类型资源类，用于查找本地化字符串等。
+</summary>
+</member><member name="M:LQ.MotionLib.ReadParam.Read_All_AxisName">
+	<summary>
+ 读取所有轴名称
+ </summary>
+	<returns>轴名称数组</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.LodeAxisparam(System.Byte@,LQ.MotionLib.absMotionHaw.MotionHawParam@)">
+	<summary>
+ 加载轴基本参数
+ </summary>
+	<param name="CardCount">卡数，传址</param>
+	<param name="param">卡参数结构，传址</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.GetAllAxisParam(System.String,System.Collections.ArrayList@,System.Collections.ArrayList@)">
+	<summary>
+ 获取制程中所有轴的速度与位置
+ </summary>
+	<param name="AllPosionList">所有轴的位置,传址</param>
+	<param name="AllSpeedList">所有轴的速度,传址</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.SaveAll(System.String,System.Collections.ArrayList,System.Collections.ArrayList)">
+	<summary>
+ 保存轴运动参数，速度
+ </summary>
+	<param name="mPath"></param>
+	<param name="AllAxisSpeed"></param>
+	<param name="AllAxisPosition"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.SaveNamePositStr(System.String,System.String,System.Collections.ArrayList)">
+	<summary>
+ 保存该轴的位置数组
+ </summary>
+	<param name="Path">存储路径</param>
+	<param name="LpName">标题名称</param>
+	<param name="PositionNew">该轴位置数组</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.SavePositionNum(System.String,System.String,System.Collections.ArrayList@,System.Collections.ArrayList@)">
+	<summary>
+ 保存轴所有速度及位置名称
+ </summary>
+	<param name="paths"></param>
+	<param name="AxiaName"></param>
+	<param name="AxiaSpeedArrilist"></param>
+	<param name="AxiaPositionArrilist"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.ReadAxiaNameSpeedPosition(System.String,System.String,System.Collections.ArrayList@,System.Collections.ArrayList@)">
+	<summary>
+ 读取轴速度，位置名字
+ </summary>
+	<param name="AxiaNameStr"></param>
+	<param name="path"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.ChangePosition(System.String,System.String,System.Single)">
+	<summary>
+ 改变位置
+ </summary>
+	<param name="PositionPath"></param>
+	<param name="PositionName"></param>
+	<param name="NewPosition"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.ChangeSpeed(System.String,System.String,System.Single)">
+	<summary>
+ 改变速度
+ </summary>
+	<param name="PositionPath"></param>
+	<param name="SpeedName"></param>
+	<param name="NewSpeed"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.ReadParam.m_WriteSpeed(System.IO.StreamWriter,System.Collections.ArrayList,System.Collections.ArrayList)">
+	<summary>
+ 将轴的所有速度写入枚举模块中
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.InitHaw">
+	<summary>
+ 初始化硬件及电机并设置相关参数
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.CloseHaw">
+	<summary>
+ 关闭硬件，释放资源
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.OrgAllAxis">
+	<summary>
+ 初始化全部轴
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.SevOnOff">
+	<summary>
+ 上电函数
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.CleanError">
+	<summary>
+ 清除伺服报警
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.EmgStop">
+	<summary>
+ 紧急停止所有运动
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.ReadIO(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 读取IO信号、点位信息
+ </summary>
+	<param name="HardwareNum ">指定硬件号或单元号,卡从0开始,PLC从100开始</param>
+	<param name="bitNum ">指定IO位或所处点位号</param>
+	<param name="intAddress">地址：运动控制卡---0表示读input地址，1表示读output地址；PLC--表示地址</param>
+	<returns>返回值：0表示低电平；1表示高电平</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.WriteIO(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 写入IO信号、点位信息
+ </summary>
+	<param name="HardwareNum ">指定硬件号或单元号,卡从0开始,PLC从100开始</param>
+	<param name="bitNum ">指定IO位或所处点位号</param>
+	<param name="Value  ">写入值：0表示低电平；1表示高电平</param>
+	<param name="intAddress">地址：运动控制卡---默认为0；PLC--表示地址</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.InspErr">
+	<summary>
+ 侦听错误
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.Line2(System.Int16,System.Int64,System.Int16,System.Int64,System.Int16)">
+	<summary>
+ 2轴直线插补
+ </summary>
+	<param name="Axis1">轴1</param>
+	<param name="Dist1">轴1距离</param>
+	<param name="Axis2">轴2</param>
+	<param name="Dist2">轴2距离</param>
+	<param name="Posi_mode">0－相对位移，1－绝对位移</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.Line3(System.Collections.ArrayList,System.Int64,System.Int64,System.Int64,System.Int16)">
+	<summary>
+ 3轴直线插补
+ </summary>
+	<param name="Axis">轴列表</param>
+	<param name="Dist1">轴1距离</param>
+	<param name="Dist2">轴2距离</param>
+	<param name="Dist3">轴3距离</param>
+	<param name="Posi_mode">0－相对位移，1－绝对位移</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.Line4(System.Int16,System.Int64,System.Int64,System.Int64,System.Int64,System.Int16)">
+	<summary>
+ 4轴直线插补
+ </summary>
+	<param name="card">指定插补运动的板卡号, 范围（0 － N - 1 ,N为卡数）</param>
+	<param name="Dist1">指定插补第一轴的位移值，单位：脉冲数</param>
+	<param name="Dist2">指定插补第二轴的位移值，单位：脉冲数</param>
+	<param name="Dist3">指定插补第三轴的位移值，单位：脉冲数</param>
+	<param name="Dist4">指定插补第四轴的位移值，单位：脉冲数</param>
+	<param name="Posi_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.ABSLine2(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 二轴绝对位置插补，圆弧插补
+ </summary>
+	<param name="Axis">轴号列表</param>
+	<param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心位置列表</param>
+	<param name="arc_dir">圆弧方向，0－顺时针,1－逆时针</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.FACLine2(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 二轴相对位置插补，圆弧插补
+ </summary>
+	<param name="Axis">轴号列表</param>
+	<param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心位置列表</param>
+	<param name="arc_dir">圆弧方向，0－顺时针,1－逆时针</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.WriteDM(System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ 写入数据至硬件数据存储区
+ </summary>
+	<param name="strUnitNum">单元号码或硬件号码</param>
+	<param name="strHeadCode">模式代码(读，写等)</param>
+	<param name="intAddress">储存地址</param>
+	<param name="intData">储存内容</param>
+	<param name="timeDelay">延时时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMotionHaw.ReadDM(System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ 写入数据至硬件数据存储区
+ </summary>
+	<param name="strUnitNum">单元号码或硬件号码</param>
+	<param name="strHeadCode">模式代码(读，写等)</param>
+	<param name="intAddress">储存地址</param>
+	<param name="intData">储存内容</param>
+	<param name="timeDelay">延时时间</param>
+	<returns>返回读取数据</returns>
+	<remarks></remarks>
+</member><member name="P:LQ.MotionLib.absMotionHaw.Axis">
+	<summary>
+ 属性：运动轴
+ </summary>
+	<value>Null</value>
+	<returns>返回对象的所有运动轴</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.NameGridDis">
+	<summary>
+ 显示NameGrid没有配置的轴
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.ConfigerDis">
+	<summary>
+ 显示Configer已经配置的轴
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.NoGridDis">
+	<summary>
+ 显示没有配置的轴号NoGrid
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.NoGridSub">
+	<summary>
+ 显示NoGrid
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.CarNewListChange">
+	<summary>
+ 添加/删除CarNewList
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.OK_Click(System.Object,System.EventArgs)">
+	<summary>
+ 确定配对
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.AddName_Click(System.Object,System.EventArgs)">
+	<summary>
+ 添加要配置的轴名字
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.DelName_Click(System.Object,System.EventArgs)">
+	<summary>
+ 删除要配置的轴名字
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+ 删除已经配置好的轴配置
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.AxisNoConfig.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ 保存数据
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.P(LQ.MotionLib.absMtAxis.AxisParam,LQ.MotionLib.absMtAxis._RunParam)">
+	<summary>
+ 初始化轴参数
+ </summary>
+	<param name="Params">参数</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SetTVel(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设置T速度
+ </summary>
+	<param name="MinVel">起始速度</param>
+	<param name="MaxVel">运行速度</param>
+	<param name="AccTm">加速时间</param>
+	<param name="DecTm">减速时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SetSVel(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+	<summary>
+ 设置S速度
+ </summary>
+	<param name="MinVel">起始速度</param>
+	<param name="MaxVel">运行速度</param>
+	<param name="AccTm">加速时间</param>
+	<param name="DecTm">减速时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SetSTVel(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+	<summary>
+ 设置S速度
+ </summary>
+	<param name="MinVel">起始速度</param>
+	<param name="MaxVel">运行速度</param>
+	<param name="AccTm">加速时间</param>
+	<param name="DecTm">减速时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SetPos(System.Int16,System.Int32)">
+	<summary>
+ 设置位置
+ </summary>
+	<param name="pulse">脉冲位置</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.H(System.Int16,System.Int16,System.Int16,System.Int32)">
+	<summary>
+ 单轴回原点
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.O(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 单轴初始化
+ </summary>
+	<param name="axis"></param>
+	<param name="home_mode"></param>
+	<param name="vel_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.M(System.Int32,System.Int16)">
+	<summary>
+ 单轴定长走位
+ </summary>
+	<param name="pulse">脉冲数量</param>
+	<param name="pulsMode">运动模式：0表示相对；1表示绝对</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.Absolut(System.Int64)">
+	<summary>
+ 走绝对
+ </summary>
+	<param name="pulse"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.Related(System.Int64)">
+	<summary>
+ 走相对
+ </summary>
+	<param name="DisPulse"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.Move(System.Int16)">
+	<summary>
+ 单轴持续走位
+ </summary>
+	<param name="dirt">方向选择：0表示负方向；1表示正方向</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.S">
+	<summary>
+ 停止走位
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReadPos(System.Int16)">
+	<summary>
+ 读取当前脉冲值
+ </summary>
+	<returns>返回当前脉冲值</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ChangeSpeedNew(System.Double)">
+	<summary>
+ 改变速度
+ </summary>
+	<param name="NewSpeed"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReadVel">
+	<summary>
+ 读取当前速度
+ </summary>
+	<returns>返回当前速度</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReduceSpeedS(System.Int32)">
+	<summary>
+ 减速停止
+ </summary>
+	<param name="Tdec"></param>减速时间
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReadEncoder(System.Int16)">
+	<summary>
+ 读取编码器值
+ </summary>
+	<returns>返回编码器值</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SetEncoder(System.Int32)">
+	<summary>
+ 设置编码器值
+ </summary>
+	<param name="value">设置值</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReadAxisStatu(System.Int16)">
+	<summary>
+ 读取轴状态，有伺服报警，INI，等
+ </summary>
+	<returns>当前轴状态</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReadAxisRunStop(System.Int16)">
+	<summary>
+ 读取轴状态，0运行，1停止
+ </summary>
+	<returns>当前轴状态</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.WriteOutIO(System.Int16,System.Int16,System.Int16)">
+	<summary>
+写入IO
+ </summary>
+	<param name="cardno"></param>
+	<param name="BitNo"></param>
+	<param name="on_off"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReadOutIO(System.Int16,System.Int16)">
+	<summary>
+ 读取输出IO
+ </summary>
+	<param name="cardno"></param>
+	<param name="BitNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReadInIO(System.Int16,System.Int16)">
+	<summary>
+ 读取出入IO
+ </summary>
+	<param name="cardno"></param>
+	<param name="BitNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SVSmove(System.Int16,System.Int16)">
+	<summary>
+ 连续走位S
+ </summary>
+	<param name="axis"></param>
+	<param name="Dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.TVTmove(System.Int16,System.Int16)">
+	<summary>
+ 连续走位T
+ </summary>
+	<param name="axis"></param>
+	<param name="Dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SPSmove(System.Int16,System.Int64,System.Int16)">
+	<summary>
+ S型定长运动
+ </summary>
+	<param name="axis"></param>
+	<param name="Dist"></param>
+	<param name="posi_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.TPTmove(System.Int16,System.Int64,System.Int16)">
+	<summary>
+ T型定长运动
+ </summary>
+	<param name="axis"></param>
+	<param name="Dist"></param>
+	<param name="posi_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.E(System.Byte)">
+	<summary>
+ 查询单轴各点信号
+ </summary>
+	<param name="index">索引值：0-总错误标志，1-伺服报警，2-极限报警，3-急停报警，4-非法开门,5-到位超时报警_
+ 6-原点信号，7-伺服停止信号,8-脉冲输出，9-运动结束,</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.Pow">
+	<summary>
+ 上电函数
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReaRDY(System.Byte)">
+	<summary>
+ 读取准备好信号
+ </summary>
+	<param name="axis"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ReaSEVON(System.Byte)">
+	<summary>
+ 读取上电信号
+ </summary>
+	<param name="axis"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.WeadSEVON(System.Byte,System.Int16)">
+	<summary>
+ 上电函数
+ </summary>
+	<param name="axis"></param>
+	<param name="on_off"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.EL(System.Int16,System.Int16)">
+	<summary>
+ 设置EL信号的有效电平及制动方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="el_mode">EL有效电平和制动方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.EZ(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的EZ信号的有效电平及其作用
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="ez_logic">EZ信号逻辑电平：0－低有效，1－高有效</param>
+	<param name="ez_mode">EZ信号的工作方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.LTC(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴锁存信号的有效电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="ltc_logic">LTC信号逻辑电平：0－低有效，1－高有效</param>
+	<param name="ltc_mode">EL有效电平和制动方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.HOME(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ORG信号的有效电平，以及允许/禁止滤波功能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="org_logic">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<param name="filter">允许/禁止滤波功能：0－禁止，1－允许</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SEVON(System.Int16,System.Int16)">
+	<summary>
+ 输出对指定轴的伺服使能端子的控制
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="on_off">设定管脚电平状态：0－低，1－高。SEVON输出口初始状态可选。</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.Counter(System.Int16,System.Int16)">
+	<summary>
+ 编码器计数方式
+ </summary>
+	<param name="axis">轴号</param>
+	<param name="mode">编码器反馈输入模式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.HMode(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设定回原点模式
+ </summary>
+	<param name="axis"></param>
+	<param name="mode"></param>
+	<param name="EZ_count"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.SDPin(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置SD信号有效的逻辑电平及其工作方式
+ </summary>
+	<param name="axis"></param>
+	<param name="enable"></param>
+	<param name="sd_logic"></param>
+	<param name="sd_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.PCSPin(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止PCS外部信号在运动中改变目标位置
+ </summary>
+	<param name="axis"></param>
+	<param name="enable"></param>
+	<param name="pcs_logic"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.PulseOut(System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的脉冲输出方式
+ </summary>
+	<param name="axis"></param>
+	<param name="outmode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.INPPin(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止INP信号及其有效的逻辑电平
+ </summary>
+	<param name="axis"></param>
+	<param name="enable"></param>
+	<param name="inp_logic"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ERCPin(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止ERC信号及其有效电平和输出方式
+ </summary>
+	<param name="axis"></param>
+	<param name="enable"></param>
+	<param name="erc_logic"></param>
+	<param name="erc_width"></param>
+	<param name="erc_off_time"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.absMtAxis.ALMPin(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ALM的逻辑电平及其工作方式
+ </summary>
+	<param name="axis"></param>
+	<param name="alm_logic"></param>
+	<param name="alm_action"></param>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.absMtAxis.Command">
+	<summary>
+ 外部调用命令控制
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.clsAxis.gratingMode">
+	<summary>
+ 光栅处理模式
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.clsAxis.RunStatus">
+	<summary>
+ 轴状态
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.clsAxis.AxisEx">
+	<summary>
+ 轴异常类型
+ </summary>
+	<remarks></remarks>
+</member><member name="P:LQ.MotionLib.clsAxis.ReadMyStatus">
+	<summary>
+ 获取轴任务状态
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LQ.MotionLib.clsAxis.GetAllEX">
+	<summary>
+ 获取轴所有异常信息
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.SetPosition(System.Int32)">
+	<summary>
+ 脉冲设置
+ </summary>
+	<param name="InVal">脉冲</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.DownPow">
+	<summary>
+ 下电
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.MoveTofac(System.Single,System.Boolean)">
+	<summary>
+ 相对运动
+ </summary>
+	<param name="InVal">运动脉冲数</param>
+	<param name="WaitOver">是否超时等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.MoveToabs(System.Single,System.Boolean)">
+	<summary>
+ 绝对运动
+ </summary>
+	<param name="InVal">目标位</param>
+	<param name="WaitOver">是否超时等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.K_Move(System.Byte,System.Boolean)">
+	<summary>
+ 持续运动
+ </summary>
+	<param name="WaitOver">超时是否等待，默认true等待，false不等待</param>
+	<returns>命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.StopM(System.Boolean)">
+	<summary>
+停止运动
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.DelStopM(System.Boolean)">
+	<summary>
+减速停止
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.GoHome(System.Boolean)">
+	<summary>
+ 回原点
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.GOBack(System.Boolean)">
+	<summary>
+直接回原点
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.ChangeSpeed(System.Single,System.Boolean)">
+	<summary>
+ 改变速度，减速
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.POW_T(System.Boolean)">
+	<summary>
+ 上电
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.ReadP(System.Boolean)">
+	<summary>
+ 读取当前脉冲
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.Paused(System.Byte,System.Boolean)">
+	<summary>
+ 暂停
+ </summary>
+	<param name="Pmode">暂停模式（0—&gt;减速停止，1—&gt;减速停止直到运动完成）</param>
+	<param name="WaitOver">超时是否等待</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.StarGra(LQ.MotionLib.clsAxis.gratingMode,System.Boolean)">
+	<summary>
+ 光栅处理
+ </summary>
+	<param name="WaitOver"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.GratingsLeave(System.Boolean)">
+	<summary>
+ 光栅离开
+ </summary>
+	<param name="WaitOver"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.Started(System.Boolean)">
+	<summary>
+ 开始
+ </summary>
+	<param name="WaitOver">是否等待，默认True（等待），false：不等待</param>
+	<returns>返回命令发送是否成功</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis._Move(System.Single,System.Single,System.Boolean)">
+	<summary>
+ 无反相间隙的绝对运动
+ </summary>
+	<param name="InVal">目标位</param>
+	<param name="OffDis">间隙补偿</param>
+	<param name="WaitOver">是否超时等待，默认True（等待），false：不等待</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.WaitTimeOut(System.Collections.ArrayList)">
+	<summary>
+ 超时或到位
+ </summary>
+	<param name="Param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.clsAxis.PulTran(System.Double,System.Single)">
+	<summary>
+ 脉冲--转动比转化函数(mm转化为脉冲数)
+ </summary>
+	<param name="Compare">比例</param>
+	<param name="distance">距离</param>
+	<returns>脉冲</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.SetrunParam.#ctor(System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="path">运动参数存储路径</param>
+	<param name="mode">启动模式，默认为True（在线模式）</param>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.IOForm.IOType">
+	<summary>
+ IO点
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.IOForm.OutIOType">
+	<summary>
+ OutIO点
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LQ.MotionLib.IOForm._PNode">
+	<summary>
+ 配置节点
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.IOForm.ListInputCom(System.Int32,System.Int16)">
+	<summary>
+ IO点个数
+ </summary>
+	<param name="Count">IO点个数</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.IOForm.ReadNowInIO(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输入
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.IOForm.ReadNowOutIO(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输出
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:LQ.MotionLib.frmMotionBasicParams.Axis2410">
+	<summary>
+ 参数文件保存路径
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.IORW.ReadInNum(System.String,System.String)">
+	<summary>
+ 读取输入
+ </summary>
+	<param name="NameNum"></param>
+	<param name="InState"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.IORW.ReadOutNum(System.String,System.String)">
+	<summary>
+ 读取输出
+ </summary>
+	<param name="NameNum"></param>
+	<param name="InState"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.IORW.WriteOutNum(System.String,System.String)">
+	<summary>
+ 写入输出点
+ </summary>
+	<param name="NameNum"></param>
+	<param name="InState"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.SpeedDealW.WriteMode">
+	<summary>
+ 写轴名称、位置、速度Mode文件
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.Close">
+	<summary>
+ 关闭控制卡，释放系统资源
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.PulseOutmode(System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的脉冲输出模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="outmode">脉冲输出方式选择</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SD(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置SD信号有效的逻辑电平及其工作方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">设置SD信号有效的逻辑电平及其工作方式</param>
+	<param name="sd_logic">设置SD信号的有效逻辑电平：0－低电平有效，1－高电平有效。</param>
+	<param name="sd_mode">设置SD信号的工作方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.PCS(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止PCS外部信号在运动中改变目标位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+	<param name="pcs_logic">设置PCS信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.INP(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止INP信号及其有效的逻辑电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+	<param name="inp_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ERC(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止ERC信号及其有效电平和输出方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">范围：0 - 3;</param>
+	<param name="erc_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<param name="erc_width">误差清除信号ERC有效输出宽度：</param>
+	<param name="erc_off_time">ERC信号的关断时间：</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ALM(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ALM的逻辑电平及其工作方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="alm_logic">ALM信号的输入电平：0－低电平有效，1－高电平有效</param>
+	<param name="alm_action">ALM信号的制动方式：0－立即停止，1－减速停止</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ELMODE(System.Int16,System.Int16)">
+	<summary>
+ 设置EL信号的有效电平及制动方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="el_mode">EL有效电平和制动方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetHome(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ORG信号的有效电平，以及允许/禁止滤波功能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="org_logic">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<param name="filter">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadSEVON(System.Int16)">
+	<summary>
+ 读取指定轴的“伺服使能”端子的电平状态
+ </summary>
+	<param name="axis"></param>
+	<returns>0－低电平，1－高电平。SEVON输出口初始状态可选。</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.writeSEVON(System.Int16,System.Int16)">
+	<summary>
+ 输出对指定轴的伺服使能端子的控制
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="on_off">设定管脚电平状态：0－低，1－高。SEVON输出口初始状态可选。</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.WriteERC(System.Int16,System.Int16)">
+	<summary>
+ 控制指定轴“误差清除”端子信号的输出
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="sel">0－复位ERC信号，1－输出ERC信号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadRDY(System.Int16)">
+	<summary>
+ 读取指定运动轴的“伺服准备好”端子的电平状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns>0－低电平，1－高电平</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadInbit(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输入点
+ </summary>
+	<param name="cardno">对应的卡号</param>
+	<param name="BitNo">对应的IO点号</param>
+	<returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.WriteOutbit(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 写入通用输出点
+ </summary>
+	<param name="cardno">对应的卡号</param>
+	<param name="BitNo">对应的IO点</param>
+	<param name="on_off">要写入ON  OFF  1为ON高电平 0为OFF低电平</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadOutbit(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输出点
+ </summary>
+	<param name="cardno">对应卡号</param>
+	<param name="BitNo">对应的IO点</param>
+	<returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadInport(System.Int16)">
+	<summary>
+ 读取卡所有通用输入口电平
+ </summary>
+	<param name="card">对应卡号</param>
+	<returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输入端口值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadOutport(System.Int16)">
+	<summary>
+ 读取指定控制卡的全部通用输出口的电平状态
+ </summary>
+	<param name="card">对应卡号</param>
+	<returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.WriteOutport(System.Int16,System.Int32)">
+	<summary>
+ 指定控制卡的全部通用输出口的电平状态
+ </summary>
+	<param name="cardno">对应卡号</param>
+	<param name="Port_Value"></param>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值。
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.HomeMode(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设定指定轴的回原点模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="mode">回原点的信号模式</param>
+	<param name="EZ_count"></param>遇到原点信号后，EZ 信号出现 EZ_count 指定的次数,仅当 mode=1 时该设置有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.HomeMove(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 单轴回原点运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="home_mode">回原点方式</param>
+	<param name="vel_mode"></param>回原点速度：0－低速回原点，1－高速回原点
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.DecelStop(System.Int16,System.Double)">
+	<summary>
+ 指定轴减速停止，调用此函数时立即减速，减速到起始速度后停止脉冲输出。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Tdec">减速时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ImdStop(System.Int16)">
+	<summary>
+ 使指定轴立即停止，没有任何减速的过程
+ </summary>
+	<param name="axis">指定轴号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.EmgStop">
+	<summary>
+ 使所有轴紧急停止
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SimultaneousStop(System.Int16)">
+	<summary>
+ 在指定轴的 CSTP 端子上输出一个单脉冲的停止信号,如果有多个轴的CSTP 信号相连接，则所有相连运动轴将同时停止运行。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetPosition(System.Int16)">
+	<summary>
+ 读取指定轴的指令脉冲位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回当前轴脉冲
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetPosition(System.Int16,System.Int32)">
+	<summary>
+ 设定指定轴的指令脉冲位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="current_position">需要给定轴当前脉冲</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetCheckDone(System.Int16)">
+	<summary>
+ 检测指定轴的运动状态，停止或是在运行中
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>0 表示指定轴正在运行，1 表示指定轴已停止
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetPrebuffStatus(System.Int16)">
+	<summary>
+ 读取指定轴的预置缓冲区的状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>0－缓冲区空，1－缓冲区满
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetIoStatus(System.Int16)">
+	<summary>
+ 读取指定轴有关运动信号的状态，包含指定轴的专用 I/O 状态。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回值去2进制后16位 每个位代表不同IO
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetAxisStatus(System.Int16)">
+	<summary>
+ 读取指定轴的主状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetRsts(System.Int16)">
+	<summary>
+ 读取指定轴的外部信号状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回8位  每一位不同含义
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.TPmove(System.Int16,System.UInt16,System.Int16)">
+	<summary>
+ 使指定轴以对称梯形速度曲线做定长位移运动。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ExTPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以非对称梯形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以对称 S 形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist">（绝对/相对）位移值，单位：脉冲数</param>
+	<param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ExSPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以非对称 S 形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SVmove(System.Int16,System.Int32)">
+	<summary>
+ 使指定轴以 S 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.TVmove(System.Int16,System.Int32)">
+	<summary>
+ 使指定轴以 T 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.VarietySpeed(System.Int16,System.Int16,System.Double)">
+	<summary>
+ 设定指定轴改变的速度上限，及变速使能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="chg_enable"></param>禁止/使能连续运行中变速（禁止保留）
+ <param name="Max_Vel"></param>运行速度的变速上限值，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadCurrentSpeed(System.Int16)">
+	<summary>
+ 读取当前速度值，单位 pps
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>指定轴的速度脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ChangeSpeed(System.Int16,System.Double)">
+	<summary>
+ 在线改变指定轴的当前运动速度,且在调用前必须先调用 d2410_variety_speed_range 设置变速范围和使能。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Curr_Vel"></param>新的运行速度，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetVectorProfile(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定插补矢量运动曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetProfile(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定梯形曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetSProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+	<summary>
+ 设定 S 形曲线运动的起始速度、运行速度、加速时间、S 段加减速脉冲数
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Sacc"></param>S 加速段脉冲数
+ <param name="Sdec"></param>S 减速段脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetSTProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定 S 形曲线运动的起始速度、运行速度、总加速时间、S 段加减速时间
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Tsacc"></param>S 加速段时间，其值小于 Tacc 的一半
+ <param name="Tsdec"></param>S 减速段时间，其值小于 Tdec 的一半
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ResetTargetPosition(System.Int16,System.Int32)">
+	<summary>
+ 在单轴绝对运动中改变目标位置。注意：该函数仅能在绝对位置模式下使用
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>绝对位置值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.Line2(System.Int16,System.Int32,System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 指定任意两轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="AXIS1"></param>指定两轴插补的第一轴
+ <param name="Dist1"></param>指定 axis1 的位移值，单位：脉冲数
+ <param name="AXIS2"></param>指定两轴插补的第二轴
+ <param name="Dist2"></param>指定 axis2 的位移值，单位：脉冲数
+ <param name="posi_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.Line3(System.Collections.ArrayList,System.Int32,System.Int32,System.Int32,System.Int16)">
+	<summary>
+ 指定任意三轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="axis"></param>轴号列表的指针
+ <param name="Dist1"></param>指定 axis[0]轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定 axis[1]轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定 axis[2]轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.Line4(System.Int16,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16)">
+	<summary>
+ 指定四轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="cardno"></param>指定插补运动的板卡号, 范围（0 － N - 1 ,N 为卡数）
+ <param name="Dist1"></param>指定第一轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定第二轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定第三轴的位移值，单位：脉冲数
+ <param name="Dist4"></param>指定第四轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+	<param name="axis"></param>轴号列表指针
+ <param name="target_pos"></param>目标绝对位置列表指针，单位：脉冲数
+ <param name="cen_pos"></param>圆心绝对位置列表指针，单位：脉冲数
+ <param name="arc_dir"></param>圆弧方向：0 表示顺时针，1 表示逆时针
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.relArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标相对位置和方向作圆弧插补运动，
+ </summary>
+	<param name="axis"></param>轴号列表指针
+ <param name="target_pos"></param>目标相对位置列表指针, 单位：脉冲数
+ <param name="cen_pos"></param>圆心相对位置列表指针, 单位：脉冲数
+ <param name="arc_dir"></param>圆弧方向：0 表示顺时针，1 表示逆时针
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetHandwheelInmode(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置输入手轮脉冲信号的计数方式
+ </summary>
+	<param name="axis"></param>指定轴号
+ <param name="inmode"></param>表示输入方式：0－A、B 相位正交计数，1－双脉冲信号
+ <param name="count_dir"></param>计数器的计数方向及倍率设置：设置手轮的倍率, 正数表示默认方向, 负数表示与默认方向相反.
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.HandwheelMove(System.Int16,System.Double)">
+	<summary>
+ 启动指定轴的手轮脉冲运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="vh"></param>最大脉冲输入频率，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetEncoder(System.Int16)">
+	<summary>
+ 读取指定轴编码器反馈位置脉冲计数值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>位置反馈脉冲值，单位：脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetEncode(System.Int16,System.Int32)">
+	<summary>
+ 设置指定轴编码器反馈脉冲计数值，范围：28 位有符号数
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="encoder_value"></param>编码器的设定值。
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.CounterConfig(System.Int16,System.Int16)">
+	<summary>
+ 设置编码器的计数方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="mode"></param>编码器的计数方式,0 非 A/B 相 (脉冲/方向)  1 1×A/B  2 2× A/B  3 4× A/B
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ConfigLTC(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴“锁存”信号的有效电平及其和工作方式。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="ltc_logic"></param>LTC 信号逻辑电平：0－低有效，1－高有效
+ <param name="ltc_mode"></param>保留
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetLatchValue(System.Int16)">
+	<summary>
+ 读取编码器锁存器的值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>锁存器内的编码器脉冲数，单位：脉冲
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetLatchFlag(System.Int16)">
+	<summary>
+ 读取指定控制卡的锁存器的标志位
+ </summary>
+	<param name="axis"></param>指定控制卡号, 范围（0 － N - 1 ,N 为卡数）
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ResetLatchFlag(System.Int16)">
+	<summary>
+ 复位指定控制卡的锁存器的标志位
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetCounterFlag(System.Int16)">
+	<summary>
+ 读取指定控制卡的计数器的标识位
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ResetCounterFlag(System.Int16)">
+	<summary>
+ 复位计数器的计数标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ResetClearFlag(System.Int16)">
+	<summary>
+ 复位计数器的清零标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.Config_EZ(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的 EZ 信号的有效电平及其作用
+ </summary>
+	<param name="axis"></param>指定轴号
+ <param name="ez_logic"></param>EZ 信号逻辑电平：0－低有效，1－高有效
+ <param name="ez_mode"></param>EZ 信号的工作方式：0－EZ 信号无效，1－EZ 是计数器复位信号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ConfigLatchMode(System.Int16,System.Int16)">
+	<summary>
+ 设置锁存方式为单轴锁存或是四轴同时锁存
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <param name="all_enable"></param>锁存方式 ：0－单独锁存， 1－四轴同时锁存
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.TrigerChunnel(System.Int16,System.Int16)">
+	<summary>
+ 选择全部锁存时的外触发信号通道；可以由二个信号通道输入， 即 LTC0,
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="num"></param>信号通道选择号 0：LTC0 锁存四个轴 1：LTC1 锁存四个轴
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetSpeakerLogic(System.Int16,System.Int16)">
+	<summary>
+ 选择编码器 Speaker 和 LED 的输出逻辑, 默认为低有效
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="logic"></param> 0：低有效， 1：高有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ConfigEMG(System.Int16,System.Int16,System.Int16)">
+	<summary>
+  EMG 信号设置，急停信号有效后会立即停止所有轴
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="enable"></param>0：无效; 1:有效
+ <param name="emg_logic"></param>0：:低有效; 1:高有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ConfigLTCFilter(System.Int16,System.Int16,System.Int16)">
+	<summary>
+	</summary>
+	<param name="cardno"></param>
+	<param name="width"></param>
+	<param name="enable"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ConfigEncoderFilter(System.Int16,System.Int16,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="width"></param>
+	<param name="enable"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ReadCMP(System.Int16)">
+	<summary>
+ 读取指定轴的比较输出端口的电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>1－高电平；0－低电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.WriteCMP(System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的位置比较输出端口的电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="on_off"></param>on_off 1－高电平；0－低电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ConfigCMP(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 配置位置比较输出端口的功能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_enable"></param>配置 CMP1(X 轴)、CMP2(Y 轴)、CMP3(Z 轴)、CMP4(A
+ <param name="cmp2_enable"></param>配置 CMP1’(X 轴)、CMP2’(Y 轴)、CMP3’(Z 轴)、
+ <param name="CMP_logic"></param>0－负逻辑；1－正逻辑
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ConfigComparator(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 配置指定轴 2 个比较器的触发条件。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_condition"></param>比较器 1 的触发条件
+ <param name="cmp2_condition"></param>比较器 2 的触发条件
+ <param name="source_sel"></param>配置计数器类型
+ <param name="SL_action"></param>保留
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetComparatorData(System.Int16,System.Int32,System.Int32)">
+	<summary>
+ 预置比较器数值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_data"></param>比较器 1 的值
+ <param name="cmp2_data"></param>比较器 2 的值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.GetEquiv(System.Int16,System.Double@)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="equiv"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetEquiv(System.Int16,System.Double)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="new_equiv"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.ArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="target_pos"></param>
+	<param name="cen_pos"></param>
+	<param name="arc_dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.RelArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="rel_pos"></param>
+	<param name="rel_cen"></param>
+	<param name="arc_dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetTMoveAll(System.Int16,System.Int16@,System.Int32@,System.Int16)">
+	<summary>
+ 设置多轴同步运动的运动参数
+ </summary>
+	<param name="TotalAxes"></param>TotalAxes 同步运动轴的数量
+ <param name="pAxis"></param>轴号列表指针
+ <param name="pDist"></param>距离列表指针，单位：当量脉冲数
+ <param name="posi_mode"></param>位置模式：0 表示相对位置，1 表示绝对位置
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.StartMoveAll(System.Int16)">
+	<summary>
+ 按照预设运动参数，开始多轴同步运动
+ </summary>
+	<param name="FirstAxis"></param>FirstAxis 第一轴轴号
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetSyncOption(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 多轴同步选项的设置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="sync_stop_on"></param>sync_stop_on 1 表示有 CSTP,轴停止；0 表示有 CSTP 时，轴不停
+ <param name="cstop_output_on"></param>cstop_output_on 1 表示当异常停止时，输出 CSTP；0 表示不输出
+ <param name="sync_option1"></param> 0 表示立即启动该功能；1 表示等待 CSTA 后启动该功能
+ <param name="sync_option2"></param>保留
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.SetSyncStopMode(System.Int16,System.Int16)">
+	<summary>
+ 设置同步停止的模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="stop_mode"></param>stop_mode 停止模式：0 表示立即停止；1 表示减速停止
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib.BaseFunction.BoardRest">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.Close">
+	<summary>
+ 关闭控制卡，释放系统资源
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.PulseOutmode(System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的脉冲输出模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="outmode">脉冲输出方式选择</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SD(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置SD信号有效的逻辑电平及其工作方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">设置SD信号有效的逻辑电平及其工作方式</param>
+	<param name="sd_logic">设置SD信号的有效逻辑电平：0－低电平有效，1－高电平有效。</param>
+	<param name="sd_mode">设置SD信号的工作方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.PCS(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止PCS外部信号在运动中改变目标位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+	<param name="pcs_logic">设置PCS信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.INP(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止INP信号及其有效的逻辑电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">允许/禁止信号功能：0－无效，1－有效</param>
+	<param name="inp_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ERC(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置允许/禁止ERC信号及其有效电平和输出方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="enable">范围：0 - 3;</param>
+	<param name="erc_logic">设置INP信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<param name="erc_width">误差清除信号ERC有效输出宽度：</param>
+	<param name="erc_off_time">ERC信号的关断时间：</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ALM(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ALM的逻辑电平及其工作方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="alm_logic">ALM信号的输入电平：0－低电平有效，1－高电平有效</param>
+	<param name="alm_action">ALM信号的制动方式：0－立即停止，1－减速停止</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ELMODE(System.Int16,System.Int16)">
+	<summary>
+ 设置EL信号的有效电平及制动方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="el_mode">EL有效电平和制动方式</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetHome(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置ORG信号的有效电平，以及允许/禁止滤波功能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="org_logic">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<param name="filter">ORG信号的有效电平：0－低电平有效，1－高电平有效</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadSEVON(System.Int16)">
+	<summary>
+ 读取指定轴的“伺服使能”端子的电平状态
+ </summary>
+	<param name="axis"></param>
+	<returns>0－低电平，1－高电平。SEVON输出口初始状态可选。</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.writeSEVON(System.Int16,System.Int16)">
+	<summary>
+ 输出对指定轴的伺服使能端子的控制
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="on_off">设定管脚电平状态：0－低，1－高。SEVON输出口初始状态可选。</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.WriteERC(System.Int16,System.Int16)">
+	<summary>
+ 控制指定轴“误差清除”端子信号的输出
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="sel">0－复位ERC信号，1－输出ERC信号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadRDY(System.Int16)">
+	<summary>
+ 读取指定运动轴的“伺服准备好”端子的电平状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns>0－低电平，1－高电平</returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadInbit(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输入点
+ </summary>
+	<param name="cardno">对应的卡号</param>
+	<param name="BitNo">对应的IO点号</param>
+	<returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.WriteOutbit(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 写入通用输出点
+ </summary>
+	<param name="cardno">对应的卡号</param>
+	<param name="BitNo">对应的IO点</param>
+	<param name="on_off">要写入ON  OFF  1为ON高电平 0为OFF低电平</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadOutbit(System.Int16,System.Int16)">
+	<summary>
+ 读取通用输出点
+ </summary>
+	<param name="cardno">对应卡号</param>
+	<param name="BitNo">对应的IO点</param>
+	<returns></returns>0为低电平 1为高电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadInport(System.Int16)">
+	<summary>
+ 读取卡所有通用输入口电平
+ </summary>
+	<param name="card">对应卡号</param>
+	<returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输入端口值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadOutport(System.Int16)">
+	<summary>
+ 读取指定控制卡的全部通用输出口的电平状态
+ </summary>
+	<param name="card">对应卡号</param>
+	<returns></returns>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.WriteOutport(System.Int16,System.Int32)">
+	<summary>
+ 指定控制卡的全部通用输出口的电平状态
+ </summary>
+	<param name="cardno">对应卡号</param>
+	<param name="Port_Value"></param>bit0 – bit19 位值分别代表第 1 – 20 号输出端口值。
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.HomeMode(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设定指定轴的回原点模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="mode">回原点的信号模式</param>
+	<param name="EZ_count"></param>遇到原点信号后，EZ 信号出现 EZ_count 指定的次数,仅当 mode=1 时该设置有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.HomeMove(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 单轴回原点运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="home_mode">回原点方式</param>
+	<param name="vel_mode"></param>回原点速度：0－低速回原点，1－高速回原点
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.DecelStop(System.Int16,System.Double)">
+	<summary>
+ 指定轴减速停止，调用此函数时立即减速，减速到起始速度后停止脉冲输出。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Tdec">减速时间</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ImdStop(System.Int16)">
+	<summary>
+ 使指定轴立即停止，没有任何减速的过程
+ </summary>
+	<param name="axis">指定轴号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.EmgStop">
+	<summary>
+ 使所有轴紧急停止
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SimultaneousStop(System.Int16)">
+	<summary>
+ 在指定轴的 CSTP 端子上输出一个单脉冲的停止信号,如果有多个轴的CSTP 信号相连接，则所有相连运动轴将同时停止运行。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetPosition(System.Int16)">
+	<summary>
+ 读取指定轴的指令脉冲位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回当前轴脉冲
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetPosition(System.Int16,System.Int32)">
+	<summary>
+ 设定指定轴的指令脉冲位置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="current_position">需要给定轴当前脉冲</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetCheckDone(System.Int16)">
+	<summary>
+ 检测指定轴的运动状态，停止或是在运行中
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>0 表示指定轴正在运行，1 表示指定轴已停止
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetPrebuffStatus(System.Int16)">
+	<summary>
+ 读取指定轴的预置缓冲区的状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>0－缓冲区空，1－缓冲区满
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetIoStatus(System.Int16)">
+	<summary>
+ 读取指定轴有关运动信号的状态，包含指定轴的专用 I/O 状态。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回值去2进制后16位 每个位代表不同IO
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetAxisStatus(System.Int16)">
+	<summary>
+ 读取指定轴的主状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetRsts(System.Int16)">
+	<summary>
+ 读取指定轴的外部信号状态
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>返回8位  每一位不同含义
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.TPmove(System.Int16,System.UInt16,System.Int16)">
+	<summary>
+ 使指定轴以对称梯形速度曲线做定长位移运动。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ExTPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以非对称梯形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以对称 S 形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist">（绝对/相对）位移值，单位：脉冲数</param>
+	<param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ExSPmove(System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 使指定轴以非对称 S 形速度曲线做定长位移运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>（绝对/相对）位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SVmove(System.Int16,System.Int32)">
+	<summary>
+ 使指定轴以 S 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.TVmove(System.Int16,System.Int32)">
+	<summary>
+ 使指定轴以 T 形速度曲线加速到高速，并持续运行下去。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dir"></param>指定运动的方向，其中 0 表示负方向，1 表示正方向
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.VarietySpeed(System.Int16,System.Int16,System.Double)">
+	<summary>
+ 设定指定轴改变的速度上限，及变速使能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="chg_enable"></param>禁止/使能连续运行中变速（禁止保留）
+ <param name="Max_Vel"></param>运行速度的变速上限值，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadCurrentSpeed(System.Int16)">
+	<summary>
+ 读取当前速度值，单位 pps
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>指定轴的速度脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ChangeSpeed(System.Int16,System.Double)">
+	<summary>
+ 在线改变指定轴的当前运动速度,且在调用前必须先调用 d5400_variety_speed_range 设置变速范围和使能。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Curr_Vel"></param>新的运行速度，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetVectorProfile(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定插补矢量运动曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetProfile(System.Int16,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定梯形曲线的起始速度、运行速度、加速时间、减速时间
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetSProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+	<summary>
+ 设定 S 形曲线运动的起始速度、运行速度、加速时间、S 段加减速脉冲数
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Sacc"></param>S 加速段脉冲数
+ <param name="Sdec"></param>S 减速段脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetSTProfile(System.Int16,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 设定 S 形曲线运动的起始速度、运行速度、总加速时间、S 段加减速时间
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Min_Vel"></param>起始速度，单位 pps
+ <param name="Max_Vel"></param>运行速度，单位 pps
+ <param name="Tacc"></param>总加速时间，单位 s
+ <param name="Tdec"></param>总减速时间，单位 s
+ <param name="Tsacc"></param>S 加速段时间，其值小于 Tacc 的一半
+ <param name="Tsdec"></param>S 减速段时间，其值小于 Tdec 的一半
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ResetTargetPosition(System.Int16,System.Int32)">
+	<summary>
+ 在单轴绝对运动中改变目标位置。注意：该函数仅能在绝对位置模式下使用
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="Dist"></param>绝对位置值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.Line2(System.Int16,System.Int32,System.Int16,System.Int32,System.Int16)">
+	<summary>
+ 指定任意两轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="AXIS1"></param>指定两轴插补的第一轴
+ <param name="Dist1"></param>指定 axis1 的位移值，单位：脉冲数
+ <param name="AXIS2"></param>指定两轴插补的第二轴
+ <param name="Dist2"></param>指定 axis2 的位移值，单位：脉冲数
+ <param name="posi_mode"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.Line3(System.Collections.ArrayList,System.Int32,System.Int32,System.Int32,System.Int16)">
+	<summary>
+ 指定任意三轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="axis"></param>轴号列表的指针
+ <param name="Dist1"></param>指定 axis[0]轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定 axis[1]轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定 axis[2]轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.Line4(System.Int16,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16)">
+	<summary>
+ 指定四轴以对称的梯形速度曲线做插补运动
+ </summary>
+	<param name="cardno"></param>指定插补运动的板卡号, 范围（0 － N - 1 ,N 为卡数）
+ <param name="Dist1"></param>指定第一轴的位移值，单位：脉冲数
+ <param name="Dist2"></param>指定第二轴的位移值，单位：脉冲数
+ <param name="Dist3"></param>指定第三轴的位移值，单位：脉冲数
+ <param name="Dist4"></param>指定第四轴的位移值，单位：脉冲数
+ <param name="posi_mode"></param>位移模式设定：0 表示相对位移，1 表示绝对位移
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+	<param name="axis"></param>轴号列表指针
+ <param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心绝对位置列表指针 </param>
+	<param name="arc_dir">圆弧方向：0 表示顺时针，1 表示逆时针</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.relArcMove(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Int16)">
+	<summary>
+ 指定任意的两轴以当前位置为起点，按指定的圆心、目标绝对位置和方向作圆弧插补运动，
+ </summary>
+	<param name="axis"></param>轴号列表指针
+ <param name="target_pos">目标位置列表（指定圆弧终点）</param>
+	<param name="cen_pos">圆心绝对位置列表指针 </param>
+	<param name="arc_dir">圆弧方向：0 表示顺时针，1 表示逆时针</param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetHandwheelInmode(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置输入手轮脉冲信号的计数方式
+ </summary>
+	<param name="axis"></param>指定轴号
+ <param name="inmode"></param>表示输入方式：0－A、B 相位正交计数，1－双脉冲信号
+ <param name="count_dir"></param>计数器的计数方向及倍率设置：设置手轮的倍率, 正数表示默认方向, 负数表示与默认方向相反.
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.HandwheelMove(System.Int16,System.Double)">
+	<summary>
+ 启动指定轴的手轮脉冲运动
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="vh"></param>最大脉冲输入频率，单位 pps
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetEncoder(System.Int16)">
+	<summary>
+ 读取指定轴编码器反馈位置脉冲计数值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>位置反馈脉冲值，单位：脉冲数
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetEncode(System.Int16,System.Int32)">
+	<summary>
+ 设置指定轴编码器反馈脉冲计数值，范围：28 位有符号数
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="encoder_value"></param>编码器的设定值。
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.CounterConfig(System.Int16,System.Int16)">
+	<summary>
+ 设置编码器的计数方式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="mode"></param>编码器的计数方式,0 非 A/B 相 (脉冲/方向)  1 1×A/B  2 2× A/B  3 4× A/B
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ConfigLTC(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴“锁存”信号的有效电平及其和工作方式。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="ltc_logic"></param>LTC 信号逻辑电平：0－低有效，1－高有效
+ <param name="ltc_mode"></param>保留
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetLatchValue(System.Int16)">
+	<summary>
+ 读取编码器锁存器的值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>锁存器内的编码器脉冲数，单位：脉冲
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetLatchFlag(System.Int16)">
+	<summary>
+ 读取指定控制卡的锁存器的标志位
+ </summary>
+	<param name="axis"></param>指定控制卡号, 范围（0 － N - 1 ,N 为卡数）
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ResetLatchFlag(System.Int16)">
+	<summary>
+ 复位指定控制卡的锁存器的标志位
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetCounterFlag(System.Int16)">
+	<summary>
+ 读取指定控制卡的计数器的标识位
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <returns></returns>返回32位数据  每一位不同
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ResetCounterFlag(System.Int16)">
+	<summary>
+ 复位计数器的计数标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ResetClearFlag(System.Int16)">
+	<summary>
+ 复位计数器的清零标志位, 范围（0 － N - 1 ,N 为卡数）
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.Config_EZ(System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的 EZ 信号的有效电平及其作用
+ </summary>
+	<param name="axis"></param>指定轴号
+ <param name="ez_logic"></param>EZ 信号逻辑电平：0－低有效，1－高有效
+ <param name="ez_mode"></param>EZ 信号的工作方式：0－EZ 信号无效，1－EZ 是计数器复位信号
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ConfigLatchMode(System.Int16,System.Int16)">
+	<summary>
+ 设置锁存方式为单轴锁存或是四轴同时锁存
+ </summary>
+	<param name="cardno"></param>指定控制卡号
+ <param name="all_enable"></param>锁存方式 ：0－单独锁存， 1－四轴同时锁存
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.TrigerChunnel(System.Int16,System.Int16)">
+	<summary>
+ 选择全部锁存时的外触发信号通道；可以由二个信号通道输入， 即 LTC0,
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="num"></param>信号通道选择号 0：LTC0 锁存四个轴 1：LTC1 锁存四个轴
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetSpeakerLogic(System.Int16,System.Int16)">
+	<summary>
+ 选择编码器 Speaker 和 LED 的输出逻辑, 默认为低有效
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="logic"></param> 0：低有效， 1：高有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ConfigEMG(System.Int16,System.Int16,System.Int16)">
+	<summary>
+  EMG 信号设置，急停信号有效后会立即停止所有轴
+ </summary>
+	<param name="cardno"></param>卡号
+ <param name="enable"></param>0：无效; 1:有效
+ <param name="emg_logic"></param>0：:低有效; 1:高有效
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ConfigLTCFilter(System.Int16,System.Int16,System.Int16)">
+	<summary>
+	</summary>
+	<param name="cardno"></param>
+	<param name="width"></param>
+	<param name="enable"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ConfigEncoderFilter(System.Int16,System.Int16,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="width"></param>
+	<param name="enable"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ReadCMP(System.Int16)">
+	<summary>
+ 读取指定轴的比较输出端口的电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<returns></returns>1－高电平；0－低电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.WriteCMP(System.Int16,System.Int16)">
+	<summary>
+ 设置指定轴的位置比较输出端口的电平
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="on_off"></param>on_off 1－高电平；0－低电平
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ConfigCMP(System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 配置位置比较输出端口的功能
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_enable"></param>配置 CMP1(X 轴)、CMP2(Y 轴)、CMP3(Z 轴)、CMP4(A
+ <param name="cmp2_enable"></param>配置 CMP1’(X 轴)、CMP2’(Y 轴)、CMP3’(Z 轴)、
+ <param name="CMP_logic"></param>0－负逻辑；1－正逻辑
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ConfigComparator(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 配置指定轴 2 个比较器的触发条件。
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_condition"></param>比较器 1 的触发条件
+ <param name="cmp2_condition"></param>比较器 2 的触发条件
+ <param name="source_sel"></param>配置计数器类型
+ <param name="SL_action"></param>保留
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetComparatorData(System.Int16,System.Int32,System.Int32)">
+	<summary>
+ 预置比较器数值
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="cmp1_data"></param>比较器 1 的值
+ <param name="cmp2_data"></param>比较器 2 的值
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.GetEquiv(System.Int16,System.Double@)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="equiv"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetEquiv(System.Int16,System.Double)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="new_equiv"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.ArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="target_pos"></param>
+	<param name="cen_pos"></param>
+	<param name="arc_dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.RelArcMoveUnitmm(System.Int16@,System.Double@,System.Double@,System.Int16)">
+	<summary>
+	</summary>
+	<param name="axis"></param>
+	<param name="rel_pos"></param>
+	<param name="rel_cen"></param>
+	<param name="arc_dir"></param>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetTMoveAll(System.Int16,System.Int16@,System.Int32@,System.Int16)">
+	<summary>
+ 设置多轴同步运动的运动参数
+ </summary>
+	<param name="TotalAxes"></param>TotalAxes 同步运动轴的数量
+ <param name="pAxis"></param>轴号列表指针
+ <param name="pDist"></param>距离列表指针，单位：当量脉冲数
+ <param name="posi_mode"></param>位置模式：0 表示相对位置，1 表示绝对位置
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.StartMoveAll(System.Int16)">
+	<summary>
+ 按照预设运动参数，开始多轴同步运动
+ </summary>
+	<param name="FirstAxis"></param>FirstAxis 第一轴轴号
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetSyncOption(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ 多轴同步选项的设置
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="sync_stop_on"></param>sync_stop_on 1 表示有 CSTP,轴停止；0 表示有 CSTP 时，轴不停
+ <param name="cstop_output_on"></param>cstop_output_on 1 表示当异常停止时，输出 CSTP；0 表示不输出
+ <param name="sync_option1"></param> 0 表示立即启动该功能；1 表示等待 CSTA 后启动该功能
+ <param name="sync_option2"></param>保留
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.SetSyncStopMode(System.Int16,System.Int16)">
+	<summary>
+ 设置同步停止的模式
+ </summary>
+	<param name="axis">指定轴号</param>
+	<param name="stop_mode"></param>stop_mode 停止模式：0 表示立即停止；1 表示减速停止
+ <returns></returns>1 表示正常；－1 表示参数错
+ <remarks></remarks>
+</member><member name="M:LQ.MotionLib._5400Base.BoardRest">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:LQ.MotionLib.SetLanguage.setlanguag(System.String)">
+	<summary>
+ 语言设置
+ </summary>
+	<param name="lange"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

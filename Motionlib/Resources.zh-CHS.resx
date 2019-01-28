@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALM制动方式" xml:space="preserve">
+    <value>ALM制动方式</value>
+  </data>
+  <data name="ALM有效电平" xml:space="preserve">
+    <value>ALM有效电平</value>
+  </data>
+  <data name="EL设置" xml:space="preserve">
+    <value>EL设置</value>
+  </data>
+  <data name="EMG信号使能" xml:space="preserve">
+    <value>EMG信号使能</value>
+  </data>
+  <data name="EMG有效电平" xml:space="preserve">
+    <value>EMG有效电平</value>
+  </data>
+  <data name="ERC信号" xml:space="preserve">
+    <value>ERC信号</value>
+  </data>
+  <data name="ERC信号使能" xml:space="preserve">
+    <value>ERC信号使能</value>
+  </data>
+  <data name="ERC关断时间" xml:space="preserve">
+    <value>ERC关断时间</value>
+  </data>
+  <data name="ERC有效宽度" xml:space="preserve">
+    <value>ERC有效宽度</value>
+  </data>
+  <data name="ERC有效电平" xml:space="preserve">
+    <value>ERC有效电平</value>
+  </data>
+  <data name="INP信号使能" xml:space="preserve">
+    <value>INP信号使能</value>
+  </data>
+  <data name="INP有效电平" xml:space="preserve">
+    <value>INP有效电平</value>
+  </data>
+  <data name="PCS允许或禁止" xml:space="preserve">
+    <value>PCS允许或禁止</value>
+  </data>
+  <data name="PCS有效电平" xml:space="preserve">
+    <value>PCS有效电平</value>
+  </data>
+  <data name="SD允许或禁止" xml:space="preserve">
+    <value>SD允许或禁止</value>
+  </data>
+  <data name="SD工作模式" xml:space="preserve">
+    <value>SD工作模式</value>
+  </data>
+  <data name="SD有效电平" xml:space="preserve">
+    <value>SD有效电平</value>
+  </data>
+  <data name="SEVON电平" xml:space="preserve">
+    <value>SEVON电平</value>
+  </data>
+  <data name="Stop模式" xml:space="preserve">
+    <value>Stop模式</value>
+  </data>
+  <data name="S型" xml:space="preserve">
+    <value>S型</value>
+  </data>
+  <data name="T型" xml:space="preserve">
+    <value>T型</value>
+  </data>
+  <data name="上电" xml:space="preserve">
+    <value>上电</value>
+  </data>
+  <data name="不存在此轴参数" xml:space="preserve">
+    <value>不存在此轴参数</value>
+  </data>
+  <data name="不理" xml:space="preserve">
+    <value>不理</value>
+  </data>
+  <data name="传动比" xml:space="preserve">
+    <value>传动比</value>
+  </data>
+  <data name="伺服RAY电平" xml:space="preserve">
+    <value>伺服RAY电平</value>
+  </data>
+  <data name="伺服报警" xml:space="preserve">
+    <value>伺服报警</value>
+  </data>
+  <data name="位置" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="位置编辑" xml:space="preserve">
+    <value>位置编辑</value>
+  </data>
+  <data name="低电平" xml:space="preserve">
+    <value>低电平</value>
+  </data>
+  <data name="低速" xml:space="preserve">
+    <value>低速</value>
+  </data>
+  <data name="使用IO点" xml:space="preserve">
+    <value>使用IO点</value>
+  </data>
+  <data name="保存" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="保存参数" xml:space="preserve">
+    <value>保存参数</value>
+  </data>
+  <data name="保存配置" xml:space="preserve">
+    <value>保存配置</value>
+  </data>
+  <data name="停止" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="停止运动" xml:space="preserve">
+    <value>停止运动</value>
+  </data>
+  <data name="允许" xml:space="preserve">
+    <value>允许</value>
+  </data>
+  <data name="光栅异物移除" xml:space="preserve">
+    <value>光栅异物移除</value>
+  </data>
+  <data name="光栅报警" xml:space="preserve">
+    <value>光栅报警</value>
+  </data>
+  <data name="减速" xml:space="preserve">
+    <value>减速</value>
+  </data>
+  <data name="减速停" xml:space="preserve">
+    <value>减速停</value>
+  </data>
+  <data name="减速停止" xml:space="preserve">
+    <value>减速停止</value>
+  </data>
+  <data name="减速时间" xml:space="preserve">
+    <value>减速时间：</value>
+  </data>
+  <data name="减速比" xml:space="preserve">
+    <value>减速比：</value>
+  </data>
+  <data name="减速脉冲" xml:space="preserve">
+    <value>减速脉冲：</value>
+  </data>
+  <data name="初始化失败" xml:space="preserve">
+    <value>初始化失败</value>
+  </data>
+  <data name="删除" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="删除位置" xml:space="preserve">
+    <value>删除位置</value>
+  </data>
+  <data name="删除轴名称" xml:space="preserve">
+    <value>删除轴名称</value>
+  </data>
+  <data name="删除选中速度" xml:space="preserve">
+    <value>删除选中速度</value>
+  </data>
+  <data name="删除配置结果" xml:space="preserve">
+    <value>删除配置结果</value>
+  </data>
+  <data name="到位" xml:space="preserve">
+    <value>到位</value>
+  </data>
+  <data name="到位信号发送" xml:space="preserve">
+    <value>到位信号发送</value>
+  </data>
+  <data name="加速时间" xml:space="preserve">
+    <value>加速时间：</value>
+  </data>
+  <data name="加速脉冲" xml:space="preserve">
+    <value>加速脉冲：</value>
+  </data>
+  <data name="卡号" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="卡号选择" xml:space="preserve">
+    <value>卡号选择</value>
+  </data>
+  <data name="卡数量" xml:space="preserve">
+    <value>卡数量</value>
+  </data>
+  <data name="卡类型" xml:space="preserve">
+    <value>卡类型</value>
+  </data>
+  <data name="原点有效电平" xml:space="preserve">
+    <value>原点有效电平</value>
+  </data>
+  <data name="原点滤波使能" xml:space="preserve">
+    <value>原点滤波使能</value>
+  </data>
+  <data name="原点设置" xml:space="preserve">
+    <value>原点设置</value>
+  </data>
+  <data name="参数" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="参数导入" xml:space="preserve">
+    <value>参数导入</value>
+  </data>
+  <data name="参数文件不正确" xml:space="preserve">
+    <value>参数文件不正确</value>
+  </data>
+  <data name="参数设置" xml:space="preserve">
+    <value>参数设置</value>
+  </data>
+  <data name="反向" xml:space="preserve">
+    <value>反向</value>
+  </data>
+  <data name="取消" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="变速" xml:space="preserve">
+    <value>变速</value>
+  </data>
+  <data name="可用输入" xml:space="preserve">
+    <value>可用输入</value>
+  </data>
+  <data name="可用输出" xml:space="preserve">
+    <value>可用输出</value>
+  </data>
+  <data name="名称" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="后台繁忙" xml:space="preserve">
+    <value>后台繁忙</value>
+  </data>
+  <data name="启动速度" xml:space="preserve">
+    <value>启动速度：</value>
+  </data>
+  <data name="回原点" xml:space="preserve">
+    <value>回原点</value>
+  </data>
+  <data name="回原点EZ个数" xml:space="preserve">
+    <value>回原点EZ个数</value>
+  </data>
+  <data name="回原点方向" xml:space="preserve">
+    <value>回原点方向</value>
+  </data>
+  <data name="回原点模式" xml:space="preserve">
+    <value>回原点模式</value>
+  </data>
+  <data name="回原点速度模式" xml:space="preserve">
+    <value>回原点速度模式</value>
+  </data>
+  <data name="型号" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="复位" xml:space="preserve">
+    <value>复位</value>
+  </data>
+  <data name="复位速度" xml:space="preserve">
+    <value>复位速度：</value>
+  </data>
+  <data name="对应关系" xml:space="preserve">
+    <value>对应关系</value>
+  </data>
+  <data name="开始" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="张" xml:space="preserve">
+    <value>张</value>
+  </data>
+  <data name="当前值" xml:space="preserve">
+    <value>当前值</value>
+  </data>
+  <data name="当前状态" xml:space="preserve">
+    <value>当前状态</value>
+  </data>
+  <data name="急停报警" xml:space="preserve">
+    <value>急停报警</value>
+  </data>
+  <data name="报警" xml:space="preserve">
+    <value>报警</value>
+  </data>
+  <data name="持续运动" xml:space="preserve">
+    <value>持续运动</value>
+  </data>
+  <data name="指令发送失败" xml:space="preserve">
+    <value>指令发送失败</value>
+  </data>
+  <data name="指令发送成功" xml:space="preserve">
+    <value>指令发送成功</value>
+  </data>
+  <data name="改变选中速度" xml:space="preserve">
+    <value>改变选中速度</value>
+  </data>
+  <data name="无效" xml:space="preserve">
+    <value>无效</value>
+  </data>
+  <data name="无需添加" xml:space="preserve">
+    <value>无需添加</value>
+  </data>
+  <data name="暂停" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="最大速度" xml:space="preserve">
+    <value>最大速度：</value>
+  </data>
+  <data name="有效" xml:space="preserve">
+    <value>有效</value>
+  </data>
+  <data name="未找到轴配置文件" xml:space="preserve">
+    <value>未找到轴配置文件</value>
+  </data>
+  <data name="正向" xml:space="preserve">
+    <value>正向</value>
+  </data>
+  <data name="正方向" xml:space="preserve">
+    <value>正方向</value>
+  </data>
+  <data name="正极限" xml:space="preserve">
+    <value>正极限</value>
+  </data>
+  <data name="正极限报警" xml:space="preserve">
+    <value>正极限报警</value>
+  </data>
+  <data name="此位置已经有" xml:space="preserve">
+    <value>此位置已经有</value>
+  </data>
+  <data name="测试" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="添加" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="添加位置" xml:space="preserve">
+    <value>添加位置</value>
+  </data>
+  <data name="添加卡" xml:space="preserve">
+    <value>添加卡</value>
+  </data>
+  <data name="添加输入" xml:space="preserve">
+    <value>添加输入</value>
+  </data>
+  <data name="添加输出" xml:space="preserve">
+    <value>添加输出</value>
+  </data>
+  <data name="添加速度" xml:space="preserve">
+    <value>添加速度</value>
+  </data>
+  <data name="添加项目" xml:space="preserve">
+    <value>添加项目</value>
+  </data>
+  <data name="添加项目名称" xml:space="preserve">
+    <value>添加项目名称：</value>
+  </data>
+  <data name="添加项目状态A" xml:space="preserve">
+    <value>添加项目状态A：</value>
+  </data>
+  <data name="添加项目状态B" xml:space="preserve">
+    <value>添加项目状态B：</value>
+  </data>
+  <data name="点动移动模式" xml:space="preserve">
+    <value>点动移动模式</value>
+  </data>
+  <data name="状态" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="目标位置" xml:space="preserve">
+    <value>目标位置：</value>
+  </data>
+  <data name="直运模式" xml:space="preserve">
+    <value>直运模式</value>
+  </data>
+  <data name="相对运动" xml:space="preserve">
+    <value>相对运动</value>
+  </data>
+  <data name="相对运动模式" xml:space="preserve">
+    <value>相对运动模式</value>
+  </data>
+  <data name="确定" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="碰到光栅" xml:space="preserve">
+    <value>碰到光栅</value>
+  </data>
+  <data name="禁止" xml:space="preserve">
+    <value>禁止</value>
+  </data>
+  <data name="离开原点方向" xml:space="preserve">
+    <value>离开原点方向</value>
+  </data>
+  <data name="移动" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="立即停止" xml:space="preserve">
+    <value>立即停止</value>
+  </data>
+  <data name="等待用户指令" xml:space="preserve">
+    <value>等待用户指令</value>
+  </data>
+  <data name="类型" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="类型选择" xml:space="preserve">
+    <value>类型选择</value>
+  </data>
+  <data name="给出状态格式不正确" xml:space="preserve">
+    <value>给出状态格式不正确</value>
+  </data>
+  <data name="绝对运动" xml:space="preserve">
+    <value>绝对运动</value>
+  </data>
+  <data name="编码计数模式" xml:space="preserve">
+    <value>编码计数模式</value>
+  </data>
+  <data name="脉冲" xml:space="preserve">
+    <value>脉冲</value>
+  </data>
+  <data name="脉冲模式" xml:space="preserve">
+    <value>脉冲模式</value>
+  </data>
+  <data name="请检查位置名" xml:space="preserve">
+    <value>请检查位置名</value>
+  </data>
+  <data name="请检查文件是否缺失" xml:space="preserve">
+    <value>请检查文件是否缺失</value>
+  </data>
+  <data name="请输入要添加的位置" xml:space="preserve">
+    <value>请输入要添加的位置</value>
+  </data>
+  <data name="读取参数" xml:space="preserve">
+    <value>读取参数</value>
+  </data>
+  <data name="读取当前脉冲" xml:space="preserve">
+    <value>读取当前脉冲</value>
+  </data>
+  <data name="负向" xml:space="preserve">
+    <value>负向</value>
+  </data>
+  <data name="负方向" xml:space="preserve">
+    <value>负方向</value>
+  </data>
+  <data name="负极限" xml:space="preserve">
+    <value>负极限</value>
+  </data>
+  <data name="负极限报警" xml:space="preserve">
+    <value>负极限报警</value>
+  </data>
+  <data name="超时报警" xml:space="preserve">
+    <value>超时报警</value>
+  </data>
+  <data name="软件极限使能" xml:space="preserve">
+    <value>软件极限使能</value>
+  </data>
+  <data name="轴" xml:space="preserve">
+    <value>轴</value>
+  </data>
+  <data name="轴初始化失败" xml:space="preserve">
+    <value>轴初始化失败</value>
+  </data>
+  <data name="轴号" xml:space="preserve">
+    <value>轴号</value>
+  </data>
+  <data name="轴名称" xml:space="preserve">
+    <value>轴名称</value>
+  </data>
+  <data name="输入操作" xml:space="preserve">
+    <value>输入操作</value>
+  </data>
+  <data name="输出操作" xml:space="preserve">
+    <value>输出操作</value>
+  </data>
+  <data name="输出类型" xml:space="preserve">
+    <value>输出类型</value>
+  </data>
+  <data name="运动" xml:space="preserve">
+    <value>运动</value>
+  </data>
+  <data name="运动到位" xml:space="preserve">
+    <value>运动到位</value>
+  </data>
+  <data name="运动异常" xml:space="preserve">
+    <value>运动异常</value>
+  </data>
+  <data name="运动超时" xml:space="preserve">
+    <value>运动超时</value>
+  </data>
+  <data name="运动距离" xml:space="preserve">
+    <value>运动距离</value>
+  </data>
+  <data name="运动轴选择" xml:space="preserve">
+    <value>运动轴选择</value>
+  </data>
+  <data name="退出" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="速度" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="速度名称" xml:space="preserve">
+    <value>速度名称：</value>
+  </data>
+  <data name="速度曲线模式" xml:space="preserve">
+    <value>速度曲线模式</value>
+  </data>
+  <data name="速度类型" xml:space="preserve">
+    <value>速度类型</value>
+  </data>
+  <data name="速度编辑" xml:space="preserve">
+    <value>速度编辑</value>
+  </data>
+  <data name="速度设置" xml:space="preserve">
+    <value>速度设置</value>
+  </data>
+  <data name="速度选择" xml:space="preserve">
+    <value>速度选择</value>
+  </data>
+  <data name="非AB" xml:space="preserve">
+    <value>非AB</value>
+  </data>
+  <data name="马上停" xml:space="preserve">
+    <value>马上停</value>
+  </data>
+  <data name="驱动参数设置" xml:space="preserve">
+    <value>驱动参数设置</value>
+  </data>
+  <data name="高电平" xml:space="preserve">
+    <value>高电平</value>
+  </data>
+  <data name="高速" xml:space="preserve">
+    <value>高速</value>
+  </data>
+</root>
